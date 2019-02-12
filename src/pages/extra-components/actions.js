@@ -1,6 +1,7 @@
 import { Row, Col, Card, Actions } from 'rnsc';
 import React from 'react';
 import { Link } from 'gatsby';
+import SEO from '../../components/SEO';
 
 const ActionsPage = () => {
   const items = [
@@ -49,6 +50,7 @@ const ActionsPage = () => {
   ];
   return (
     <>
+      <SEO title="Actions" keywords={[`OAH`, `application`, `react`]} />
       <Row>
         <Col xs={12} md={6}>
           <Card>

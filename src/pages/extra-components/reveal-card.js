@@ -1,10 +1,11 @@
 import { Col, Row, RevealCard, Card } from 'rnsc';
 import React from 'react';
-//import Layout from '../../components/Layout';
+import SEO from '../../components/SEO';
 
 export default function RevealCards() {
   return (
     <>
+      <SEO title="RevealCards" keywords={[`OAH`, `application`, `react`]} />
       <Row>
         <Col xs={6}>
           <RevealCard>

@@ -1,11 +1,15 @@
 import { Row, Col, Card, Search } from 'rnsc';
 import React from 'react';
-//import Layout from '../../components/Layout';
+import SEO from '../../components/SEO';
 
 export default function SearchPage() {
   const submitHandle = value => value;
   return (
     <>
+      <SEO
+        title="Animated Searches"
+        keywords={[`OAH`, `application`, `react`]}
+      />
       <Row>
         <Col xs={12} md={6}>
           <Card>

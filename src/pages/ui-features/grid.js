@@ -2,7 +2,7 @@ import { Row, Col, Card } from 'rnsc';
 import styled, { css } from 'styled-components';
 import { breakpointUp } from 'rnsc/theme';
 import React from 'react';
-//import Layout from '../../components/Layout';
+import SEO from '../../components/SEO';
 
 const Box = styled.div`
   ${({ theme, nested, container, row, large }) => css`
@@ -27,6 +27,7 @@ const Box = styled.div`
 const GridPage = () => {
   return (
     <>
+      <SEO title="Grid" keywords={[`OAH`, `application`, `react`]} />
       <Row>
         <Col xs={12}>
           <Card>

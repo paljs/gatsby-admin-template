@@ -1,10 +1,11 @@
 import { Col, Row, Card, Tabs, Tab } from 'rnsc';
 import React from 'react';
-//import Layout from '../../../components/Layout';
+import SEO from '../../components/SEO';
 
 const TabPage = () => {
   return (
     <>
+      <SEO title="Tabs" keywords={[`OAH`, `application`, `react`]} />
       <Row>
         <Col xs={12}>
           <Card>

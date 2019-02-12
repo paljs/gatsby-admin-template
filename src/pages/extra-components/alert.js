@@ -1,10 +1,11 @@
 import { Row, Col, Card, Alert } from 'rnsc';
 import React from 'react';
-//import Layout from '../../components/Layout';
+import SEO from '../../components/SEO';
 
 const alert = () => {
   return (
     <>
+      <SEO title="Alert" keywords={[`OAH`, `application`, `react`]} />
       <Row>
         <Col xs={12}>
           <Card>

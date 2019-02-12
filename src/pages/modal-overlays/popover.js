@@ -1,10 +1,11 @@
 import React from 'react';
 import { Row, Col, Card, Button, Tabs, Tab, Popover } from 'rnsc';
-//import Layout from '../../components/Layout';
+import SEO from '../../components/SEO';
 
 export default function PopoverPage() {
   return (
     <>
+      <SEO title="Popover" keywords={[`OAH`, `application`, `react`]} />
       <Row>
         <Col xs={12} md={6}>
           <Card size="XS">

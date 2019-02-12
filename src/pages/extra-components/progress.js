@@ -1,7 +1,7 @@
 import { Row, Col, Card, Actions, Progress } from 'rnsc';
 import styled from 'styled-components';
 import React, { useState, useEffect } from 'react';
-//import Layout from '../../components/Layout';
+import SEO from '../../components/SEO';
 
 const Container = styled.div`
   display: flex;
@@ -34,6 +34,7 @@ export default function ProgressPage() {
   const style = { marginBottom: '1rem' };
   return (
     <>
+      <SEO title="Progress" keywords={[`OAH`, `application`, `react`]} />
       <Row>
         <Col xs={12}>
           <Card>

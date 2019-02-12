@@ -1,13 +1,14 @@
 import { Row, Col, Card, Button, ButtonInput, ButtonLink } from 'rnsc';
 import { navigate } from 'gatsby';
 import React from 'react';
-//import Layout from '../../components/Layout';
+import SEO from '../../components/SEO';
 
 const style = { marginBottom: '1.5rem' };
 
 export default function ButtonPage() {
   return (
     <>
+      <SEO title="Button" keywords={[`OAH`, `application`, `react`]} />
       <Row>
         <Col xs={12}>
           <Card>

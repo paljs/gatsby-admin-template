@@ -1,10 +1,11 @@
 import { Row, Col, Card, Button, Tooltip } from 'rnsc';
 import React from 'react';
-//import Layout from '../../components/Layout';
+import SEO from '../../components/SEO';
 
 export default function TooltipPage() {
   return (
     <>
+      <SEO title="Tooltip" keywords={[`OAH`, `application`, `react`]} />
       <Row>
         <Col xs={12} md={6}>
           <Card>

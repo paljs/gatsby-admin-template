@@ -1,6 +1,6 @@
 import { Row, Col, Card, Button, Spinner, Tabs, Tab } from 'rnsc';
 import React, { useState } from 'react';
-//import Layout from '../../components/Layout';
+import SEO from '../../components/SEO';
 
 const SpinnerPage = () => {
   const [show, setShow] = useState(false);
@@ -24,6 +24,7 @@ const SpinnerPage = () => {
 
   return (
     <>
+      <SEO title="Spinner" keywords={[`OAH`, `application`, `react`]} />
       <Row>
         <Col xs={12}>
           <Card style={{ position: 'relative' }}>

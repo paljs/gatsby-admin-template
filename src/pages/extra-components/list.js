@@ -1,6 +1,6 @@
 import { Row, Col, Card, List, ListItem, User } from 'rnsc';
 import React from 'react';
-//import Layout from '../../components/Layout';
+import SEO from '../../components/SEO';
 
 const ListPage = () => {
   const userList = [
@@ -25,6 +25,7 @@ const ListPage = () => {
   ];
   return (
     <>
+      <SEO title="List" keywords={[`OAH`, `application`, `react`]} />
       <Row>
         <Col xs={12} md={6}>
           <Card size="SM">

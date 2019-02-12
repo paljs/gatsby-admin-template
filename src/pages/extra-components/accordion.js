@@ -1,13 +1,13 @@
 import { Accordion, AccordionItem, Card, Col, Row, Button } from 'rnsc';
 import React, { useRef } from 'react';
-
-//import Layout from '../../components/Layout';
+import SEO from '../../components/SEO';
 
 const Accordions = () => {
   const accordionRef = useRef();
   const style = { marginBottom: '1.5rem' };
   return (
     <>
+      <SEO title="Accordions" keywords={[`OAH`, `application`, `react`]} />
       <Row>
         <Col xs={12} lg={6}>
           <Card>

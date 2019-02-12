@@ -1,6 +1,6 @@
 import { Row, Col, Card, Checkbox, Radio, InputGroup, Select } from 'rnsc';
 import React from 'react';
-//import Layout from '../../components/Layout';
+import SEO from '../../components/SEO';
 
 const options = [
   { value: 'chocolate', label: 'Chocolate' },
@@ -16,6 +16,7 @@ const InputPage = () => {
   };
   return (
     <>
+      <SEO title="Input" keywords={[`OAH`, `application`, `react`]} />
       <Row>
         <Col xs={12} md={6}>
           <Card>
