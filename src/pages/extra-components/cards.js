@@ -1,0 +1,71 @@
+import { Row, Col, Card } from 'rnsc';
+import React from 'react';
+
+export default function Cards() {
+  return (
+    <>
+      <Row>
+        <Col xs={6}>
+          <Card>
+            <header>Simple card</header>
+            <div className="card-body">
+              Hello Card component this body of card
+            </div>
+            <footer>Footer</footer>
+          </Card>
+        </Col>
+        <Col xs={6}>
+          <Card size="XS">
+            <header>Card with size</header>
+            <div className="card-body">
+              Hello Card component this body of card Hello Card component this
+              body of card Hello Card component this body of card Hello Card
+              component this body of card
+            </div>
+            <footer>Footer</footer>
+          </Card>
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={6}>
+          <Card status="Info">
+            <header>Status card</header>
+            <div className="card-body">
+              Hello Card component this body of card
+            </div>
+            <footer>Footer</footer>
+          </Card>
+        </Col>
+        <Col xs={6}>
+          <Card status="Primary">
+            <header>Status card</header>
+            <div className="card-body">
+              Hello Card component this body of card
+            </div>
+            <footer>Footer</footer>
+          </Card>
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={6}>
+          <Card status="Primary" accent="Info">
+            <header>Status and accent card</header>
+            <div className="card-body">
+              Hello Card component this body of card
+            </div>
+            <footer>Footer</footer>
+          </Card>
+        </Col>
+        <Col xs={6}>
+          <Card accent="Info">
+            <header>Card with accent</header>
+            <div className="card-body">
+              Hello Card component this body of card
+            </div>
+            <footer>Footer</footer>
+          </Card>
+        </Col>
+      </Row>
+    </>
+  );
+}
