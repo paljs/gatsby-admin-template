@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[18],{226:function(n,e,t){"use strict";t.r(e),t.d(e,"default",function(){return c});var a=t(0),r=t.n(a),u=t(49);function c(){return Object(u.navigate)("/dashboard"),r.a.createElement("div",null)}}}]);
-//# sourceMappingURL=component---src-pages-index-js-f3a307e6e53527688fd8.js.map

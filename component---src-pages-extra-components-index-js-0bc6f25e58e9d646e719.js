@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{217:function(n,e,t){"use strict";t.r(e),t.d(e,"default",function(){return r});var c=t(0),o=t.n(c),a=t(49);function r(){return Object(a.navigate)("/extra-components/accordion"),o.a.createElement("div",null)}}}]);
-//# sourceMappingURL=component---src-pages-extra-components-index-js-0bc6f25e58e9d646e719.js.map
