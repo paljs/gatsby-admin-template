@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { navigate } from 'gatsby';
 
 export default function index() {
-  navigate('/extra-components/accordion');
+  useEffect(() => {
+    navigate('/extra-components/accordion');
+  }),
+    [];
   return <div />;
 }
