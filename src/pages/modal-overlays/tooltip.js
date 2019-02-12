@@ -1,4 +1,4 @@
-import { Row, Col, Card, Button, Tooltip } from 'rnsc';
+import { Row, Col, Card, Button, Tooltip } from 'oah-ui';
 import React from 'react';
 import SEO from '../../components/SEO';
 

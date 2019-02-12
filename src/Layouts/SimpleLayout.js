@@ -1,5 +1,5 @@
 import { createGlobalStyle, css } from 'styled-components';
-import { breakpointDown } from 'rnsc/theme';
+import { breakpointDown } from 'oah-ui/theme';
 /* eslint-disable indent */
 
 const SimpleLayout = createGlobalStyle`

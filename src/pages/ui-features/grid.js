@@ -1,6 +1,6 @@
-import { Row, Col, Card } from 'rnsc';
+import { Row, Col, Card } from 'oah-ui';
 import styled, { css } from 'styled-components';
-import { breakpointUp } from 'rnsc/theme';
+import { breakpointUp } from 'oah-ui/theme';
 import React from 'react';
 import SEO from '../../components/SEO';
 

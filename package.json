@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "oah-admin",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Admin dashboard template based on Gatsby with oah-ui component package",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "OAH Technology",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.0.118",
@@ -22,7 +22,7 @@
     "react-dom": "^16.8.1",
     "react-helmet": "^5.2.0",
     "react-select": "^2.3.0",
-    "rnsc": "^0.0.0-23",
+    "oah-ui": "^0.0.0-3",
     "styled-components": "^4.1.3"
   },
   "keywords": [

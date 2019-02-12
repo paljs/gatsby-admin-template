@@ -1,4 +1,4 @@
-import { Row, Col, Card, Checkbox, Radio, InputGroup, Select } from 'rnsc';
+import { Row, Col, Card, Checkbox, Radio, InputGroup, Select } from 'oah-ui';
 import React from 'react';
 import SEO from '../../components/SEO';
 

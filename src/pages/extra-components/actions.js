@@ -1,4 +1,4 @@
-import { Row, Col, Card, Actions } from 'rnsc';
+import { Row, Col, Card, Actions } from 'oah-ui';
 import React from 'react';
 import { Link } from 'gatsby';
 import SEO from '../../components/SEO';

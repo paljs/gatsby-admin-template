@@ -1,4 +1,4 @@
-import { Row, Col, Card, Actions, Progress } from 'rnsc';
+import { Row, Col, Card, Actions, Progress } from 'oah-ui';
 import styled from 'styled-components';
 import React, { useState, useEffect } from 'react';
 import SEO from '../../components/SEO';

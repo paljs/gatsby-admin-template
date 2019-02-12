@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Card, Button, Tabs, Tab, Popover } from 'rnsc';
+import { Row, Col, Card, Button, Tabs, Tab, Popover } from 'oah-ui';
 import SEO from '../../components/SEO';
 
 export default function PopoverPage() {

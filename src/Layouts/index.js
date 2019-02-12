@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Link } from 'gatsby';
 import { ThemeProvider } from 'styled-components';
-import { themes } from 'rnsc/theme';
+import { themes } from 'oah-ui/theme';
 import {
   Layout,
   LayoutHeader,
@@ -14,7 +14,7 @@ import {
   Sidebar,
   SidebarBody,
   Menu
-} from 'rnsc';
+} from 'oah-ui';
 
 import menuItems from './menuItem';
 import Header from './Header';
@@ -64,7 +64,7 @@ export default function LayoutPage(props) {
               {theme !== 'corporate' && (
                 <header>
                   <ButtonLink
-                    href="https://github.com/oahtech/rnsc"
+                    href="https://github.com/oahtech/oah-ui"
                     target="_blank"
                     className="main-btn"
                     hero

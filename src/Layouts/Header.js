@@ -1,4 +1,4 @@
-import { Actions, Search, User } from 'rnsc';
+import { Actions, Search, User } from 'oah-ui';
 import React from 'react';
 
 export default function Header(props) {

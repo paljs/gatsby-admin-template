@@ -1,4 +1,4 @@
-import { Row, Col, Card, FlipCard } from 'rnsc';
+import { Row, Col, Card, FlipCard } from 'oah-ui';
 import React from 'react';
 import SEO from '../../components/SEO';
 

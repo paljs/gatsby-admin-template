@@ -1,4 +1,4 @@
-import { Row, Col, Card, Button, Spinner, Tabs, Tab } from 'rnsc';
+import { Row, Col, Card, Button, Spinner, Tabs, Tab } from 'oah-ui';
 import React, { useState } from 'react';
 import SEO from '../../components/SEO';
 

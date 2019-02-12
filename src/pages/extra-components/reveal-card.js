@@ -1,4 +1,4 @@
-import { Col, Row, RevealCard, Card } from 'rnsc';
+import { Col, Row, RevealCard, Card } from 'oah-ui';
 import React from 'react';
 import SEO from '../../components/SEO';
 

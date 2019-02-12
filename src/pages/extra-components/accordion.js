@@ -1,4 +1,4 @@
-import { Accordion, AccordionItem, Card, Col, Row, Button } from 'rnsc';
+import { Accordion, AccordionItem, Card, Col, Row, Button } from 'oah-ui';
 import React, { useRef } from 'react';
 import SEO from '../../components/SEO';
 
