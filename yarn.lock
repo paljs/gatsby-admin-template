@@ -7681,10 +7681,10 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-oah-ui@^0.0.0-3:
-  version "0.0.0-3"
-  resolved "https://registry.yarnpkg.com/oah-ui/-/oah-ui-0.0.0-3.tgz#85d5fcb136cf4c472d07edce38e1aed5413dfcd8"
-  integrity sha512-/rG7y7IKUQac2TxcL2JSi6ZTZ3T0RWdaRENv+OL4rKS4ZVSxdeUNRnilVd4qvWeO+saoJTZeNhZiV2nST6Iy3g==
+oah-ui@^0.0.0-6:
+  version "0.0.0-6"
+  resolved "https://registry.yarnpkg.com/oah-ui/-/oah-ui-0.0.0-6.tgz#b165d7ffe9af29b0a993749719667125a5fb3d3d"
+  integrity sha512-BXRhFG6WQOcxREWXQmQDs/MbJ/nVXI2ZzlbWWweo9ebXfbq5NnKbGxNyhkYexFqL1cX5dvU+yJBAZXtAmN9Qkg==
   dependencies:
     polished "^2.3.3"
 

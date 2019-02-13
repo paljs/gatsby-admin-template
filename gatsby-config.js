@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: '/oah-admin',
   siteMetadata: {
     title: `OAH-Admin`,
     description: `Admin dashboard template based on Gatsby with oah-ui component package.`,

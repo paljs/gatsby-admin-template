@@ -18,7 +18,7 @@
     "gatsby-transformer-sharp": "^2.1.13",
     "gh-pages": "^2.0.1",
     "ionicons": "^4.5.5",
-    "oah-ui": "^0.0.0-3",
+    "oah-ui": "^0.0.0-6",
     "prop-types": "^15.7.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
@@ -38,7 +38,7 @@
     "dev": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build && gh-pages -d public",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "repository": {

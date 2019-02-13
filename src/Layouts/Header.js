@@ -44,7 +44,7 @@ export default function Header(props) {
     {
       content: (
         <User
-          image="url('/oah-admin/icons/icon-72x72.png')"
+          image="url('/icons/icon-72x72.png')"
           name="OAH Technology"
           title="Manger"
           size="LG"
