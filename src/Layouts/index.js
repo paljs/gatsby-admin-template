@@ -43,7 +43,7 @@ export default function LayoutPage(props) {
     >
       <>
         <SimpleLayout globalStyle={GlobalStyle} />
-        <Layout>
+        <Layout dir={dir}>
           <LayoutHeader fixed>
             <Header
               changeTheme={theme => changeTheme(theme)}

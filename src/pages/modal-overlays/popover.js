@@ -10,12 +10,13 @@ export default function PopoverPage() {
         <Col xs={12} md={6}>
           <Card size="XS">
             <header>Popover Position</header>
-            <div className="card-body">
+            <div className="card-body" id="popoverScroll">
               <Popover
                 className="with-margin inline-block"
                 trigger="hover"
                 placement="left"
                 overlay="Hello, how are you today?"
+                eventListener="#popoverScroll"
               >
                 <Button fullWidth>Left</Button>
               </Popover>
@@ -24,6 +25,7 @@ export default function PopoverPage() {
                 trigger="hover"
                 placement="right"
                 overlay="Hello, how are you today?"
+                eventListener="#popoverScroll"
               >
                 <Button fullWidth>Right</Button>
               </Popover>
@@ -32,6 +34,7 @@ export default function PopoverPage() {
                 trigger="hover"
                 placement="top"
                 overlay="Hello, how are you today?"
+                eventListener="#popoverScroll"
               >
                 <Button fullWidth>Top</Button>
               </Popover>
@@ -40,6 +43,7 @@ export default function PopoverPage() {
                 trigger="hover"
                 placement="bottom"
                 overlay="Hello, how are you today?"
+                eventListener="#popoverScroll"
               >
                 <Button fullWidth>Bottom</Button>
               </Popover>
@@ -49,8 +53,9 @@ export default function PopoverPage() {
         <Col xs={12} md={6}>
           <Card size="XS">
             <header>Simple Popovers</header>
-            <div className="card-body">
+            <div className="card-body popoverScroll">
               <Popover
+                eventListener=".popoverScroll"
                 className="with-margin inline-block"
                 trigger="click"
                 placement="top"
@@ -72,6 +77,7 @@ export default function PopoverPage() {
                 <Button fullWidth>on click</Button>
               </Popover>
               <Popover
+                eventListener=".popoverScroll"
                 className="with-margin inline-block"
                 trigger="hover"
                 placement="top"
@@ -85,9 +91,10 @@ export default function PopoverPage() {
                 <Button fullWidth>on hover</Button>
               </Popover>
               <Popover
+                eventListener=".popoverScroll"
                 className="with-margin inline-block"
                 trigger="focus"
-                placement="top"
+                placement="bottom"
                 overlay={
                   <Card className="popover-card">
                     <header>Hello!</header>
