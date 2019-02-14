@@ -101,6 +101,10 @@ export default [
       {
         title: 'Tooltip',
         link: '/modal-overlays/tooltip'
+      },
+      {
+        title: 'Toastr',
+        link: '/modal-overlays/toastr'
       }
     ]
   }

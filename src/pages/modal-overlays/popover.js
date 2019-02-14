@@ -94,7 +94,7 @@ export default function PopoverPage() {
                 eventListener=".popoverScroll"
                 className="with-margin inline-block"
                 trigger="focus"
-                placement="bottom"
+                placement="top"
                 overlay={
                   <Card className="popover-card">
                     <header>Hello!</header>
