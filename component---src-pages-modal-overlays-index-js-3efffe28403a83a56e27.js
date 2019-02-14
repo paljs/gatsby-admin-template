@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[19],{227:function(n,e,t){"use strict";t.r(e),t.d(e,"default",function(){return a});var o=t(0),c=t.n(o),u=t(49);function a(){return Object(o.useEffect)(function(){Object(u.navigate)("/modal-overlays/popover")}),c.a.createElement("div",null)}}}]);
+//# sourceMappingURL=component---src-pages-modal-overlays-index-js-3efffe28403a83a56e27.js.map
