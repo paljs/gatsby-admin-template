@@ -25,7 +25,7 @@ const ListPage = () => {
   ];
   return (
     <>
-      <SEO title="List" keywords={[`OAH`, `application`, `react`]} />
+      <SEO title="List" keywords={['OAH', 'application', 'react']} />
       <Row>
         <Col xs={12} md={6}>
           <Card size="SM">

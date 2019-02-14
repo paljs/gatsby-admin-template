@@ -5,7 +5,7 @@ import SEO from '../../components/SEO';
 export default function FlipCards() {
   return (
     <>
-      <SEO title="FlipCards" keywords={[`OAH`, `application`, `react`]} />
+      <SEO title="FlipCards" keywords={['OAH', 'application', 'react']} />
       <Row>
         <Col xs={6}>
           <FlipCard>

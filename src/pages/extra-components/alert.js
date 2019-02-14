@@ -5,7 +5,7 @@ import SEO from '../../components/SEO';
 const alert = () => {
   return (
     <>
-      <SEO title="Alert" keywords={[`OAH`, `application`, `react`]} />
+      <SEO title="Alert" keywords={['OAH', 'application', 'react']} />
       <Row>
         <Col xs={12}>
           <Card>

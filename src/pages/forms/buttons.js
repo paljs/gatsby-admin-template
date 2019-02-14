@@ -8,7 +8,7 @@ const style = { marginBottom: '1.5rem' };
 export default function ButtonPage() {
   return (
     <>
-      <SEO title="Button" keywords={[`OAH`, `application`, `react`]} />
+      <SEO title="Button" keywords={['OAH', 'application', 'react']} />
       <Row>
         <Col xs={12}>
           <Card>

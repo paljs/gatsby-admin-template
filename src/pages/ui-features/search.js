@@ -8,7 +8,7 @@ export default function SearchPage() {
     <>
       <SEO
         title="Animated Searches"
-        keywords={[`OAH`, `application`, `react`]}
+        keywords={['OAH', 'application', 'react']}
       />
       <Row>
         <Col xs={12} md={6}>

@@ -27,7 +27,7 @@ const Box = styled.div`
 const GridPage = () => {
   return (
     <>
-      <SEO title="Grid" keywords={[`OAH`, `application`, `react`]} />
+      <SEO title="Grid" keywords={['OAH', 'application', 'react']} />
       <Row>
         <Col xs={12}>
           <Card>

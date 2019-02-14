@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { navigate } from 'gatsby';
 
-export default function index() {
+export default function Index() {
   useEffect(() => {
     navigate('/dashboard');
   }),
-    [];
+  [];
   return <div />;
 }

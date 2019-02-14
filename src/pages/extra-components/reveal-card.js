@@ -5,7 +5,7 @@ import SEO from '../../components/SEO';
 export default function RevealCards() {
   return (
     <>
-      <SEO title="RevealCards" keywords={[`OAH`, `application`, `react`]} />
+      <SEO title="RevealCards" keywords={['OAH', 'application', 'react']} />
       <Row>
         <Col xs={6}>
           <RevealCard>

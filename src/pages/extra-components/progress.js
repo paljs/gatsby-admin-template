@@ -34,7 +34,7 @@ export default function ProgressPage() {
   const style = { marginBottom: '1rem' };
   return (
     <>
-      <SEO title="Progress" keywords={[`OAH`, `application`, `react`]} />
+      <SEO title="Progress" keywords={['OAH', 'application', 'react']} />
       <Row>
         <Col xs={12}>
           <Card>

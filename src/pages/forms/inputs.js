@@ -16,7 +16,7 @@ const InputPage = () => {
   };
   return (
     <>
-      <SEO title="Input" keywords={[`OAH`, `application`, `react`]} />
+      <SEO title="Input" keywords={['OAH', 'application', 'react']} />
       <Row>
         <Col xs={12} md={6}>
           <Card>
