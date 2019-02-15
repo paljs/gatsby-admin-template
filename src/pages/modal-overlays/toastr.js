@@ -4,6 +4,7 @@ import { Card } from 'oah-ui/Card';
 import { Button } from 'oah-ui/Button';
 import Toastr from 'oah-ui/Toastr';
 import { InputGroup, Checkbox, Select } from 'oah-ui';
+import SEO from '../../components/SEO';
 
 export default function ToastrPage() {
   const [count, setCount] = useState(1);
@@ -15,7 +16,14 @@ export default function ToastrPage() {
     duration: 2000,
     hasIcon: true,
     destroyByClick: true,
-    preventDuplicates: false
+    preventDuplicates: false,
+    icons: {
+      Primary: 'ion-ios-mail',
+      Warning: 'ion-ios-alert',
+      Danger: 'ion-ios-bug',
+      Success: 'ion-ios-checkmark-circle',
+      Info: 'ion-ios-help-circle'
+    }
   });
 
   const toastrRef = useRef();
@@ -51,82 +59,86 @@ export default function ToastrPage() {
   ];
 
   return (
-    <Row>
-      <Col xs={12}>
-        <Toastr ref={toastrRef} />
-        <Card>
-          <header>Toaster configuration</header>
-          <div className="card-body">
-            <Row>
-              <Col xs={12} md={6}>
-                <Select
-                  fullWidth
-                  label="Place to show toast"
-                  options={positionOptions}
-                  onChange={v => onChangeHandle('position', v.value)}
-                />
-                <InputGroup fullWidth label="Title">
-                  <input
-                    type="text"
-                    value={data.title}
-                    onChange={e => onChangeHandle('title', e.target.value)}
+    <>
+      <SEO title="Toastr" keywords={['OAH', 'application', 'react']} />
+
+      <Row>
+        <Col xs={12}>
+          <Toastr ref={toastrRef} />
+          <Card>
+            <header>Toaster configuration</header>
+            <div className="card-body">
+              <Row>
+                <Col xs={12} md={6}>
+                  <Select
+                    fullWidth
+                    label="Place to show toast"
+                    options={positionOptions}
+                    onChange={v => onChangeHandle('position', v.value)}
                   />
-                </InputGroup>
-                <InputGroup fullWidth label="Message">
-                  <input
-                    type="text"
-                    value={data.message}
-                    onChange={e => onChangeHandle('message', e.target.value)}
+                  <InputGroup fullWidth label="Title">
+                    <input
+                      type="text"
+                      value={data.title}
+                      onChange={e => onChangeHandle('title', e.target.value)}
+                    />
+                  </InputGroup>
+                  <InputGroup fullWidth label="Message">
+                    <input
+                      type="text"
+                      value={data.message}
+                      onChange={e => onChangeHandle('message', e.target.value)}
+                    />
+                  </InputGroup>
+                  <InputGroup
+                    fullWidth
+                    label="Time to hide toast, ms. 0 to persistent toast"
+                  >
+                    <input
+                      type="number"
+                      value={data.duration}
+                      onChange={e =>
+                        onChangeHandle('duration', e.target.valueAsNumber)
+                      }
+                    />
+                  </InputGroup>
+                </Col>
+                <Col xs={12} md={6}>
+                  <Select
+                    fullWidth
+                    label="Toast Status"
+                    options={statusOption}
+                    onChange={v => onChangeHandle('status', v.value)}
                   />
-                </InputGroup>
-                <InputGroup
-                  fullWidth
-                  label="Time to hide toast, ms. 0 to persistent toast"
-                >
-                  <input
-                    type="number"
-                    value={data.duration}
-                    onChange={e =>
-                      onChangeHandle('duration', e.target.valueAsNumber)
-                    }
-                  />
-                </InputGroup>
-              </Col>
-              <Col xs={12} md={6}>
-                <Select
-                  fullWidth
-                  label="Toast Status"
-                  options={statusOption}
-                  onChange={v => onChangeHandle('status', v.value)}
-                />
-                <div style={{ display: 'flex', flexDirection: 'column' }}>
-                  <Checkbox
-                    checked={data.destroyByClick}
-                    onChange={v => onChangeHandle('destroyByClick', v)}
-                  >
-                    Hide on click
-                  </Checkbox>
-                  <Checkbox
-                    checked={data.preventDuplicates}
-                    onChange={v => onChangeHandle('preventDuplicates', v)}
-                  >
-                    Prevent arising of duplicate toast
-                  </Checkbox>
-                  <Checkbox
-                    checked={data.hasIcon}
-                    onChange={v => onChangeHandle('hasIcon', v)}
-                  >
-                    Show toast with icon
-                  </Checkbox>
-                </div>
-              </Col>
-            </Row>
-          </div>
-          <footer>
-            <Button onClick={showToastr}>Show Toastr</Button>
-          </footer>
-        </Card>
-      </Col>
-    </Row>
+                  <div style={{ display: 'flex', flexDirection: 'column' }}>
+                    <Checkbox
+                      checked={data.destroyByClick}
+                      onChange={v => onChangeHandle('destroyByClick', v)}
+                    >
+                      Hide on click
+                    </Checkbox>
+                    <Checkbox
+                      checked={data.preventDuplicates}
+                      onChange={v => onChangeHandle('preventDuplicates', v)}
+                    >
+                      Prevent arising of duplicate toast
+                    </Checkbox>
+                    <Checkbox
+                      checked={data.hasIcon}
+                      onChange={v => onChangeHandle('hasIcon', v)}
+                    >
+                      Show toast with icon
+                    </Checkbox>
+                  </div>
+                </Col>
+              </Row>
+            </div>
+            <footer>
+              <Button onClick={showToastr}>Show Toastr</Button>
+            </footer>
+          </Card>
+        </Col>
+      </Row>
+    </>
   );
 }
