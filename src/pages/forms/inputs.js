@@ -52,21 +52,7 @@ const InputPage = () => {
                   </InputGroup>
                 </Col>
               </Row>
-              <InputGroup fullWidth label="Select">
-                <select name="text">
-                  <option value="value1">option 1</option>
-                  <option value="value1">option 1</option>
-                  <option value="value1">option 1</option>
-                  <option value="value1">option 1</option>
-                </select>
-              </InputGroup>
-              <Select
-                closeMenuOnSelect={false}
-                isMulti
-                fullWidth
-                label="React Select"
-                options={options}
-              />
+              <Select fullWidth placeholder="Select" options={options} />
               <InputGroup fullWidth shape="Round" label="Text Area">
                 <textarea rows="5" />
               </InputGroup>

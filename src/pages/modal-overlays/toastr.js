@@ -1,9 +1,14 @@
 import React, { useRef, useState } from 'react';
-import { Row, Col } from 'oah-ui/Grid';
-import { Card } from 'oah-ui/Card';
-import { Button } from 'oah-ui/Button';
-import Toastr from 'oah-ui/Toastr';
-import { InputGroup, Checkbox, Select } from 'oah-ui';
+import {
+  Row,
+  Col,
+  InputGroup,
+  Checkbox,
+  Select,
+  Toastr,
+  Button,
+  Card
+} from 'oah-ui';
 import SEO from '../../components/SEO';
 
 export default function ToastrPage() {
@@ -72,9 +77,10 @@ export default function ToastrPage() {
                 <Col xs={12} md={6}>
                   <Select
                     fullWidth
-                    label="Place to show toast"
+                    placeholder="Place to show toast"
                     options={positionOptions}
-                    onChange={v => onChangeHandle('position', v.value)}
+                    value={data.position}
+                    onChange={v => onChangeHandle('position', v)}
                   />
                   <InputGroup fullWidth label="Title">
                     <input
@@ -106,9 +112,10 @@ export default function ToastrPage() {
                 <Col xs={12} md={6}>
                   <Select
                     fullWidth
-                    label="Toast Status"
+                    placeholder="Toast Status"
                     options={statusOption}
-                    onChange={v => onChangeHandle('status', v.value)}
+                    value={data.status}
+                    onChange={v => onChangeHandle('status', v)}
                   />
                   <div style={{ display: 'flex', flexDirection: 'column' }}>
                     <Checkbox

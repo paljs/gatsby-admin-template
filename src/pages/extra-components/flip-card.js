@@ -7,7 +7,7 @@ export default function FlipCards() {
     <>
       <SEO title="FlipCards" keywords={['OAH', 'application', 'react']} />
       <Row>
-        <Col xs={6}>
+        <Col xs={12} md={6}>
           <FlipCard>
             <Card>
               <header>Front</header>
@@ -25,7 +25,7 @@ export default function FlipCards() {
             </Card>
           </FlipCard>
         </Col>
-        <Col xs={6}>
+        <Col xs={12} md={6}>
           <FlipCard button="bottom">
             <Card status="Info" accent="Primary">
               <header>Front</header>

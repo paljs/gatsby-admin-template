@@ -7,7 +7,7 @@ export default function RevealCards() {
     <>
       <SEO title="RevealCards" keywords={['OAH', 'application', 'react']} />
       <Row>
-        <Col xs={6}>
+        <Col xs={12} md={6}>
           <RevealCard>
             <Card>
               <header>Front</header>
@@ -25,7 +25,7 @@ export default function RevealCards() {
             </Card>
           </RevealCard>
         </Col>
-        <Col xs={6}>
+        <Col xs={12} md={6}>
           <RevealCard button="bottom">
             <Card status="Info" accent="Primary">
               <header>Front</header>

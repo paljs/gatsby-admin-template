@@ -1,5 +1,6 @@
-import { Actions, Search, User } from 'oah-ui';
+import { Actions, Search, User, ContextMenu } from 'oah-ui';
 import React from 'react';
+import { Link } from 'gatsby';
 
 export default function Header(props) {
   const submitHandle = value => value;
@@ -43,12 +44,22 @@ export default function Header(props) {
     },
     {
       content: (
-        <User
-          image="url('/icons/icon-72x72.png')"
-          name="OAH Technology"
-          title="Manger"
-          size="LG"
-        />
+        <ContextMenu
+          style={{ cursor: 'pointer' }}
+          placement="bottom"
+          items={[
+            { title: 'Profile', link: '/modal-overlays/tooltip' },
+            { title: 'Log out', link: '/logout' }
+          ]}
+          Link={Link}
+        >
+          <User
+            image="url('/icons/icon-72x72.png')"
+            name="OAH Technology"
+            title="Manger"
+            size="LG"
+          />
+        </ContextMenu>
       )
     }
   ];

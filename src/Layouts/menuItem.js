@@ -71,6 +71,10 @@ export default [
       {
         title: 'Buttons',
         link: '/forms/buttons'
+      },
+      {
+        title: 'Select',
+        link: '/forms/select'
       }
     ]
   },

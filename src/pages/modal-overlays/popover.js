@@ -1,5 +1,15 @@
 import React from 'react';
-import { Row, Col, Card, Button, Tabs, Tab, Popover } from 'oah-ui';
+import {
+  Row,
+  Col,
+  Card,
+  Button,
+  Tabs,
+  Tab,
+  Popover,
+  ContextMenu
+} from 'oah-ui';
+import { Link } from 'gatsby';
 import SEO from '../../components/SEO';
 
 export default function PopoverPage() {
@@ -104,6 +114,17 @@ export default function PopoverPage() {
               >
                 <Button fullWidth>on focus</Button>
               </Popover>
+              <ContextMenu
+                className="with-margin inline-block"
+                placement="bottom"
+                items={[
+                  { title: 'Profile', link: '/modal-overlays/tooltip' },
+                  { title: 'Log out', link: '/logout' }
+                ]}
+                Link={Link}
+              >
+                <Button fullWidth>Context Menu</Button>
+              </ContextMenu>
             </div>
           </Card>
         </Col>
