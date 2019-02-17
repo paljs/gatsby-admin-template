@@ -1,7 +1,7 @@
 import { Row, Col, Card, Chat, ChatForm, ChatMessages } from 'oah-ui';
 import React, { useState } from 'react';
 import SEO from '../../../components/SEO';
-import defaultMessages from './messages';
+import defaultMessages from '../../../components/messages';
 
 export default function ChatPage() {
   const [messages, setMessages] = useState(defaultMessages);
@@ -34,10 +34,7 @@ export default function ChatPage() {
       <Row>
         <Col xs={12} md={6} style={{ marginBottom: '1rem' }}>
           <Chat title="OAH Technology">
-            <ChatMessages
-              messages={messages}
-              mapKey="AIzaSyBTDcTZCcP37cSlZyREq7HS6nEGTZCaPa0"
-            />
+            <ChatMessages messages={messages} mapKey="API_KEY" />
             <ChatForm
               onSend={v => onSendHandle(v)}
               dropFiles
