@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[16],{184:function(n,t,e){"use strict";e.r(t),e.d(t,"default",function(){return o});var u=e(0),c=e.n(u),i=e(21);function o(){return Object(u.useEffect)(function(){Object(i.navigate)("/forms/inputs")}),c.a.createElement("div",null)}}}]);
-//# sourceMappingURL=component---src-pages-forms-index-js-92609532cbd359fe6ae7.js.map
