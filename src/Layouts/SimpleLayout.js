@@ -189,6 +189,18 @@ ${({ theme, globalStyle }) => css`
     width: 300px;
     box-shadow: none;
   }
+  .btn {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+    font-family: Exo;
+    border: 2px solid transparent;
+    &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+  }
 `}
 `;
 export default SimpleLayout;

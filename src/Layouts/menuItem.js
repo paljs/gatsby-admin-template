@@ -14,10 +14,6 @@ export default [
     link: '/extra-components',
     children: [
       {
-        title: 'Tabs',
-        link: '/extra-components/tabs'
-      },
-      {
         title: 'Accordion',
         link: '/extra-components/accordion'
       },
@@ -40,6 +36,14 @@ export default [
       {
         title: 'Progress Bar',
         link: '/extra-components/progress'
+      },
+      {
+        title: 'Tabs',
+        link: '/extra-components/tabs'
+      },
+      {
+        title: 'Chat',
+        link: '/extra-components/Chat'
       },
       {
         title: 'Cards',

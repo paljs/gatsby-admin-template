@@ -7545,10 +7545,10 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-oah-ui@^0.0.0-14:
-  version "0.0.0-14"
-  resolved "https://registry.yarnpkg.com/oah-ui/-/oah-ui-0.0.0-14.tgz#1663f6fccd3619b68549ebaa70234fbbe35a8528"
-  integrity sha512-i53cJTpFhFraHNnC10DLU7kh3UA4j+pZ9HIPFK0J86x1zanEqHypdnMz+3zTRBRzChNTf+h/Scebm7NL7/78rA==
+oah-ui@^0.0.0-19:
+  version "0.0.0-19"
+  resolved "https://registry.yarnpkg.com/oah-ui/-/oah-ui-0.0.0-19.tgz#ad6a1572452849d13bfbd15c4ff0fabe926cf177"
+  integrity sha512-FtuD+SbESmFjvbWXk+EdWxTk3wFjO9ruG+srZPDRDGU8O5n6vGS+BhZSNCiXZGLvkH7PZX/ZwQPx/nmpfpCU4Q==
   dependencies:
     polished "^2.3.3"
 
