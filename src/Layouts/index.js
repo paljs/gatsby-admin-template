@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Link } from 'gatsby';
 import { ThemeProvider } from 'styled-components';
-import { themes } from 'oah-ui/theme';
+import themes from './themes';
 import {
   Layout,
   LayoutHeader,
@@ -9,6 +9,7 @@ import {
   LayoutFooter,
   LayoutContainer,
   LayoutColumns,
+  LayoutColumn,
   GlobalStyle,
   ButtonLink,
   Sidebar,
@@ -34,16 +35,10 @@ export default function LayoutPage(props) {
     setDir(newDir);
   };
   return (
-    <ThemeProvider
-      theme={{
-        ...themes(theme, { sidebarHeaderGap: '2rem' }),
-        dir,
-        theme
-      }}
-    >
+    <ThemeProvider theme={themes(theme, dir)}>
       <>
         <SimpleLayout globalStyle={GlobalStyle} />
-        <Layout dir={dir}>
+        <Layout dir={dir} windowMode withSubHeader>
           <LayoutHeader fixed>
             <Header
               changeTheme={theme => changeTheme(theme)}
@@ -86,7 +81,9 @@ export default function LayoutPage(props) {
               </SidebarBody>
             </Sidebar>
             <LayoutContent>
-              <LayoutColumns>{props.children}</LayoutColumns>
+              <LayoutColumns>
+                <LayoutColumn>{props.children}</LayoutColumn>
+              </LayoutColumns>
               <LayoutFooter>Footer</LayoutFooter>
             </LayoutContent>
           </LayoutContainer>
