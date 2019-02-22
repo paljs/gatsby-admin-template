@@ -52,7 +52,12 @@ const InputPage = () => {
                   </InputGroup>
                 </Col>
               </Row>
-              <Select fullWidth placeholder="Select" options={options} />
+              <Select
+                style={{ marginBottom: '1rem' }}
+                fullWidth
+                placeholder="Select"
+                options={options}
+              />
               <InputGroup fullWidth shape="Round" label="Text Area">
                 <textarea rows="5" />
               </InputGroup>

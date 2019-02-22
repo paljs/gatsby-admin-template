@@ -1,72 +1,115 @@
-import { Actions, Search, User, ContextMenu } from 'oah-ui';
 import React from 'react';
 import { Link } from 'gatsby';
+import styled from 'styled-components';
+import {
+  Actions,
+  Select,
+  LayoutHeader,
+  Button,
+  User,
+  ContextMenu
+} from 'oah-ui';
+import { breakpointDown } from 'oah-ui/theme';
+
+const HeaderStyle = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  ${breakpointDown('sm')`
+    .right{
+      display: none;
+    }
+  `}
+`;
 
 export default function Header(props) {
-  const submitHandle = value => value;
-  const actions = [
+  const themeOptions = [
     {
-      icon: 'icon ion-ios-menu',
-      events: {
-        onClick: props.toggleSidebar
-      }
+      value: 'default',
+      label: 'Default',
+      selected: true
     },
     {
-      content: <h3>OAH Admin</h3>
+      value: 'cosmic',
+      label: 'Cosmic'
     },
     {
-      content: (
-        <select onChange={e => changeTheme(e)}>
-          <option value="default">default</option>
-          <option value="cosmic">cosmic</option>
-          <option value="corporate">corporate</option>
-        </select>
-      )
-    },
-    {
-      content: <button onClick={props.changeDir}>Dir</button>
-    },
-    {
-      content: <button onClick={props.collapseAll}>collapseAll</button>
-    },
-    {
-      content: <button onClick={props.expandAll}>expandAll</button>
-    },
-    {
-      content: (
-        <Search
-          submit={submitHandle}
-          type="rotate-layout"
-          placeholder="Search..."
-          hint="tap enter"
-        />
-      )
-    },
-    {
-      content: (
-        <ContextMenu
-          style={{ cursor: 'pointer' }}
-          placement="bottom"
-          items={[
-            { title: 'Profile', link: '/modal-overlays/tooltip' },
-            { title: 'Log out', link: '/logout' }
-          ]}
-          Link={Link}
-        >
-          <User
-            image="url('/icons/icon-72x72.png')"
-            name="OAH Technology"
-            title="Manger"
-            size="LG"
-          />
-        </ContextMenu>
-      )
+      value: 'corporate',
+      label: 'Corporate'
     }
   ];
-
-  const changeTheme = event => {
-    props.changeTheme(event.target.value);
-  };
-
-  return <Actions size="MD" actions={actions} />;
+  return (
+    <LayoutHeader fixed>
+      <HeaderStyle>
+        <Actions
+          size="MD"
+          actions={[
+            {
+              icon: 'icon ion-ios-menu',
+              events: {
+                onClick: props.toggleSidebar
+              }
+            },
+            {
+              content: <h3>OAH Admin</h3>
+            },
+            {
+              content: (
+                <Select
+                  size="SM"
+                  style={{ minWidth: '8rem' }}
+                  customLabel="Themes"
+                  options={themeOptions}
+                  onChange={v => props.changeTheme(v)}
+                />
+              )
+            },
+            {
+              content: (
+                <Button size="SM" onClick={() => props.changeDir()}>
+                  {props.dir}
+                </Button>
+              )
+            }
+          ]}
+        />
+        <Actions
+          size="SM"
+          className="right"
+          actions={[
+            {
+              icon: 'icon ion-logo-github',
+              url: 'https://github.com/oahtech/oah-admin',
+              target: '_blank'
+            },
+            {
+              icon: 'icon ion-logo-twitter',
+              url: 'https://twitter.com/AhmedElywh',
+              target: '_blank'
+            },
+            {
+              content: (
+                <ContextMenu
+                  style={{ cursor: 'pointer' }}
+                  placement="bottom"
+                  items={[
+                    { title: 'Profile', link: '/modal-overlays/tooltip' },
+                    { title: 'Log out', link: '/logout' }
+                  ]}
+                  Link={Link}
+                >
+                  <User
+                    image="url('/icons/icon-72x72.png')"
+                    name="OAH Technology"
+                    title="Manger"
+                    size="MD"
+                  />
+                </ContextMenu>
+              )
+            }
+          ]}
+        />
+      </HeaderStyle>
+    </LayoutHeader>
+  );
 }

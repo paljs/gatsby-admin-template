@@ -32,7 +32,7 @@ const ActionsPage = () => {
     },
     {
       icon: 'icon ion-ios-albums',
-      link: { to: '/forms/inputs' },
+      link: '/forms/inputs',
       badge: {
         status: 'Danger',
         title: '34',

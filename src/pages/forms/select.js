@@ -29,7 +29,11 @@ export default function SelectPage() {
         <Col xs={12}>
           <Card>
             <div className="card-body">
-              <Select options={statusOption} placeholder="Select" />
+              <Select
+                style={{ marginBottom: '1rem' }}
+                options={statusOption}
+                placeholder="Select"
+              />
               <Select
                 options={positionOptions}
                 multiple
