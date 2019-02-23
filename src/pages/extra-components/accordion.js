@@ -1,4 +1,4 @@
-import { Accordion, AccordionItem, Card, Col, Row, Button } from 'oah-ui';
+import { Accordion, AccordionItem, Card, CardBody, Col, Row, Button } from 'oah-ui';
 import React, { useRef } from 'react';
 import SEO from '../../components/SEO';
 
@@ -12,7 +12,7 @@ const Accordions = () => {
         <Col xs={12} lg={6}>
           <Card>
             <header>Toggle Accordion By Button</header>
-            <div className="card-body">
+            <CardBody>
               <Row>
                 <Col style={style} xs={6} lg={4}>
                   <Button
@@ -55,7 +55,7 @@ const Accordions = () => {
                   </Button>
                 </Col>
               </Row>
-            </div>
+            </CardBody>
           </Card>
           <Accordion style={style} ref={accordionRef}>
             <AccordionItem title="head 1">

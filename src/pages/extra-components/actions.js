@@ -1,4 +1,4 @@
-import { Row, Col, Card, Actions } from 'oah-ui';
+import { Row, Col, Card, CardBody, Actions } from 'oah-ui';
 import React from 'react';
 import { Link } from 'gatsby';
 import SEO from '../../components/SEO';
@@ -54,19 +54,19 @@ const ActionsPage = () => {
       <Row>
         <Col xs={12} md={6}>
           <Card>
-            <div className="card-body">
+            <CardBody>
               <Actions Link={Link} size="LG" actions={items} />
-            </div>
+            </CardBody>
           </Card>
           <Card>
-            <div className="card-body">
+            <CardBody>
               <Actions Link={Link} size="MD" actions={items} />
-            </div>
+            </CardBody>
           </Card>
           <Card>
-            <div className="card-body">
+            <CardBody>
               <Actions Link={Link} size="SM" actions={items} />
-            </div>
+            </CardBody>
           </Card>
         </Col>
       </Row>

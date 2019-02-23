@@ -1,4 +1,13 @@
-import { Row, Col, Card, Checkbox, Radio, InputGroup, Select } from 'oah-ui';
+import {
+  Row,
+  Col,
+  Card,
+  CardBody,
+  Checkbox,
+  Radio,
+  InputGroup,
+  Select
+} from 'oah-ui';
 import React from 'react';
 import SEO from '../../components/SEO';
 
@@ -21,7 +30,7 @@ const InputPage = () => {
         <Col xs={12} md={6}>
           <Card>
             <header>Input status</header>
-            <div className="card-body">
+            <CardBody>
               <InputGroup fullWidth fieldSize="SM" label="Size small">
                 <input type="text" />
               </InputGroup>
@@ -61,13 +70,13 @@ const InputPage = () => {
               <InputGroup fullWidth shape="Round" label="Text Area">
                 <textarea rows="5" />
               </InputGroup>
-            </div>
+            </CardBody>
           </Card>
         </Col>
         <Col xs={12} md={6}>
           <Card>
             <header>Validation States</header>
-            <div className="card-body">
+            <CardBody>
               <InputGroup fullWidth status="Info" label="Input with Info">
                 <input type="text" />
               </InputGroup>
@@ -122,7 +131,7 @@ const InputPage = () => {
                   </Checkbox>
                 </Col>
               </Row>
-            </div>
+            </CardBody>
           </Card>
         </Col>
       </Row>

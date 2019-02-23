@@ -1,4 +1,4 @@
-import { Row, Col, Card } from 'oah-ui';
+import { Row, Col, Card, CardBody } from 'oah-ui';
 import styled, { css } from 'styled-components';
 import { breakpointUp } from 'oah-ui/theme';
 import React from 'react';
@@ -32,7 +32,7 @@ const GridPage = () => {
         <Col xs={12}>
           <Card>
             <header>Grid System</header>
-            <div className="card-body">
+            <CardBody>
               <h2>Responsive</h2>
               <p>
                 Responsive modifiers enable specifying different column sizes,
@@ -301,7 +301,7 @@ const GridPage = () => {
                   <Box row>xs=false md={6}</Box>
                 </Col>
               </Row>
-            </div>
+            </CardBody>
           </Card>
         </Col>
       </Row>

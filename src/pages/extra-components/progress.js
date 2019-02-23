@@ -1,4 +1,4 @@
-import { Row, Col, Card, Actions, Progress } from 'oah-ui';
+import { Row, Col, Card, CardBody, Actions, Progress } from 'oah-ui';
 import styled from 'styled-components';
 import React, { useState, useEffect } from 'react';
 import SEO from '../../components/SEO';
@@ -39,7 +39,7 @@ export default function ProgressPage() {
         <Col xs={12}>
           <Card>
             <header>Progress Status</header>
-            <div className="card-body">
+            <CardBody>
               <Progress style={style} value={20} status="Primary">
                 Primary
               </Progress>
@@ -55,13 +55,13 @@ export default function ProgressPage() {
               <Progress style={style} value={100} status="Warning">
                 Warning
               </Progress>
-            </div>
+            </CardBody>
           </Card>
         </Col>
         <Col xs={12}>
           <Card>
             <header>Progress Bar Size</header>
-            <div className="card-body">
+            <CardBody>
               <Progress style={style} value={20} size="XS">
                 XS
               </Progress>
@@ -77,24 +77,24 @@ export default function ProgressPage() {
               <Progress style={style} value={100} size="XL">
                 XL
               </Progress>
-            </div>
+            </CardBody>
           </Card>
         </Col>
         <Col xs={12}>
           <Card>
             <header>Progress Bar Value</header>
-            <div className="card-body">
+            <CardBody>
               <Progress style={style} value={20} displayValue />
               <Progress style={style} value={40}>
                 Custom value
               </Progress>
-            </div>
+            </CardBody>
           </Card>
         </Col>
         <Col xs={12}>
           <Card>
             <header>Progress Bar Interactive</header>
-            <div className="card-body">
+            <CardBody>
               <Container>
                 <Actions
                   size="MD"
@@ -121,7 +121,7 @@ export default function ProgressPage() {
                   ]}
                 />
               </Container>
-            </div>
+            </CardBody>
           </Card>
         </Col>
       </Row>

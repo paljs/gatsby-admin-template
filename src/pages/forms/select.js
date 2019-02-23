@@ -1,4 +1,4 @@
-import { Row, Col, Card, Select } from 'oah-ui';
+import { Row, Col, Card, CardBody, Select } from 'oah-ui';
 import React from 'react';
 import SEO from '../../components/SEO';
 
@@ -28,7 +28,7 @@ export default function SelectPage() {
       <Row>
         <Col xs={12}>
           <Card>
-            <div className="card-body">
+            <CardBody>
               <Select
                 style={{ marginBottom: '1rem' }}
                 options={statusOption}
@@ -39,7 +39,7 @@ export default function SelectPage() {
                 multiple
                 placeholder="Select multiple"
               />
-            </div>
+            </CardBody>
           </Card>
         </Col>
       </Row>

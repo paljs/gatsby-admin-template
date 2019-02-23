@@ -1,4 +1,12 @@
-import { Row, Col, Card, Button, ButtonInput, ButtonLink } from 'oah-ui';
+import {
+  Row,
+  Col,
+  Card,
+  CardBody,
+  Button,
+  ButtonInput,
+  ButtonLink
+} from 'oah-ui';
 import { navigate } from 'gatsby';
 import React from 'react';
 import SEO from '../../components/SEO';
@@ -13,7 +21,7 @@ export default function ButtonPage() {
         <Col xs={12}>
           <Card>
             <header>Button Hero</header>
-            <div className="card-body">
+            <CardBody>
               <Row>
                 <Col style={style} xs={6} md={4} lg={2}>
                   <Button fullWidth hero status="Primary" shape="Rectangle">
@@ -46,13 +54,13 @@ export default function ButtonPage() {
                   </Button>
                 </Col>
               </Row>
-            </div>
+            </CardBody>
           </Card>
         </Col>
         <Col xs={12}>
           <Card>
             <header>Button Colors</header>
-            <div className="card-body">
+            <CardBody>
               <Row>
                 <Col style={style} xs={6} md={4} lg={2}>
                   <Button fullWidth status="Primary" shape="Rectangle">
@@ -85,13 +93,13 @@ export default function ButtonPage() {
                   </Button>
                 </Col>
               </Row>
-            </div>
+            </CardBody>
           </Card>
         </Col>
         <Col xs={12}>
           <Card>
             <header>Button Outline</header>
-            <div className="card-body">
+            <CardBody>
               <Row>
                 <Col style={style} xs={6} md={4} lg={2}>
                   <Button fullWidth outline status="Primary" shape="Rectangle">
@@ -129,13 +137,13 @@ export default function ButtonPage() {
                   </Button>
                 </Col>
               </Row>
-            </div>
+            </CardBody>
           </Card>
         </Col>
         <Col xs={12}>
           <Card>
             <header>Button Size</header>
-            <div className="card-body">
+            <CardBody>
               <Row middle="xs">
                 <Col style={style} xs={6} md={3}>
                   <Button fullWidth size="XS" shape="Rectangle">
@@ -158,13 +166,13 @@ export default function ButtonPage() {
                   </Button>
                 </Col>
               </Row>
-            </div>
+            </CardBody>
           </Card>
         </Col>
         <Col xs={12}>
           <Card>
             <header>Button Shape</header>
-            <div className="card-body">
+            <CardBody>
               <Row middle="xs">
                 <Col style={style} xs={6} sm={4}>
                   <Button fullWidth shape="Rectangle">
@@ -182,13 +190,13 @@ export default function ButtonPage() {
                   </Button>
                 </Col>
               </Row>
-            </div>
+            </CardBody>
           </Card>
         </Col>
         <Col xs={12}>
           <Card>
             <header>Button Elements</header>
-            <div className="card-body">
+            <CardBody>
               <Row middle="xs">
                 <Col style={style} xs={6} md={3}>
                   <Button fullWidth shape="Rectangle">
@@ -221,7 +229,7 @@ export default function ButtonPage() {
                   </ButtonLink>
                 </Col>
               </Row>
-            </div>
+            </CardBody>
           </Card>
         </Col>
       </Row>

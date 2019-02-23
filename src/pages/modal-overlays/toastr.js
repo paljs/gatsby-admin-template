@@ -7,7 +7,8 @@ import {
   Select,
   Toastr,
   Button,
-  Card
+  Card,
+  CardBody
 } from 'oah-ui';
 import SEO from '../../components/SEO';
 
@@ -72,7 +73,7 @@ export default function ToastrPage() {
           <Toastr ref={toastrRef} />
           <Card>
             <header>Toaster configuration</header>
-            <div className="card-body">
+            <CardBody>
               <Row>
                 <Col xs={12} md={6}>
                   <Select
@@ -139,7 +140,7 @@ export default function ToastrPage() {
                   </div>
                 </Col>
               </Row>
-            </div>
+            </CardBody>
             <footer>
               <Button onClick={showToastr}>Show Toastr</Button>
             </footer>

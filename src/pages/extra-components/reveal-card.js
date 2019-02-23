@@ -1,4 +1,4 @@
-import { Col, Row, RevealCard, Card } from 'oah-ui';
+import { Col, Row, RevealCard, Card, CardBody } from 'oah-ui';
 import React from 'react';
 import SEO from '../../components/SEO';
 
@@ -11,16 +11,12 @@ export default function RevealCards() {
           <RevealCard>
             <Card>
               <header>Front</header>
-              <div className="card-body">
-                Hello Card component this body of card
-              </div>
+              <CardBody>Hello Card component this body of card</CardBody>
               <footer>Footer</footer>
             </Card>
             <Card>
               <header>Back</header>
-              <div className="card-body">
-                Hello Card component this body of card
-              </div>
+              <CardBody>Hello Card component this body of card</CardBody>
               <footer>Footer</footer>
             </Card>
           </RevealCard>
@@ -29,16 +25,12 @@ export default function RevealCards() {
           <RevealCard button="bottom">
             <Card status="Info" accent="Primary">
               <header>Front</header>
-              <div className="card-body">
-                Hello Card component this body of card
-              </div>
+              <CardBody>Hello Card component this body of card</CardBody>
               <footer>Footer</footer>
             </Card>
             <Card status="Primary" accent="Info">
               <header>Back</header>
-              <div className="card-body">
-                Hello Card component this body of card
-              </div>
+              <CardBody>Hello Card component this body of card</CardBody>
               <footer>Footer</footer>
             </Card>
           </RevealCard>

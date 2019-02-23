@@ -1,4 +1,4 @@
-import { Row, Col, Card, Chat, ChatForm, ChatMessages } from 'oah-ui';
+import { Row, Col, Card, Chat, CardBody, ChatForm, ChatMessages } from 'oah-ui';
 import React, { useState } from 'react';
 import SEO from '../../../components/SEO';
 import defaultMessages from '../../../components/messages';
@@ -45,7 +45,7 @@ export default function ChatPage() {
         <Col xs={12} md={6}>
           <Card>
             <header>Main features</header>
-            <div className="card-body">
+            <CardBody>
               <ul>
                 <li>
                   different message types support (text, image, file, file
@@ -55,7 +55,7 @@ export default function ChatPage() {
                 <li>different UI styles</li>
               </ul>
               <Row />
-            </div>
+            </CardBody>
           </Card>
         </Col>
       </Row>

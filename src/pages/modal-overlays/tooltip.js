@@ -1,4 +1,4 @@
-import { Row, Col, Card, Button, Tooltip } from 'oah-ui';
+import { Row, Col, Card, CardBody, Button, Tooltip } from 'oah-ui';
 import React from 'react';
 import SEO from '../../components/SEO';
 
@@ -10,7 +10,7 @@ export default function TooltipPage() {
         <Col xs={12} md={6}>
           <Card>
             <header>Tooltip Placements</header>
-            <div className="card-body">
+            <CardBody>
               <Tooltip
                 className="with-margin inline-block"
                 trigger="hover"
@@ -43,13 +43,13 @@ export default function TooltipPage() {
               >
                 <Button>bottom</Button>
               </Tooltip>
-            </div>
+            </CardBody>
           </Card>
         </Col>
         <Col xs={12} md={6}>
           <Card>
             <header>Tooltip With Icon</header>
-            <div className="card-body">
+            <CardBody>
               <Tooltip
                 className="with-margin inline-block"
                 trigger="hover"
@@ -76,13 +76,13 @@ export default function TooltipPage() {
               >
                 <Button>icon right</Button>
               </Tooltip>
-            </div>
+            </CardBody>
           </Card>
         </Col>
         <Col xs={12} md={6}>
           <Card>
             <header>Tooltip Placements</header>
-            <div className="card-body">
+            <CardBody>
               <Tooltip
                 className="with-margin inline-block"
                 trigger="hover"
@@ -128,7 +128,7 @@ export default function TooltipPage() {
               >
                 <Button>Warning</Button>
               </Tooltip>
-            </div>
+            </CardBody>
           </Card>
         </Col>
       </Row>

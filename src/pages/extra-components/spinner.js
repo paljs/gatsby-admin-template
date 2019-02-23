@@ -1,4 +1,4 @@
-import { Row, Col, Card, Button, Spinner, Tabs, Tab } from 'oah-ui';
+import { Row, Col, Card, CardBody, Button, Spinner, Tabs, Tab } from 'oah-ui';
 import React, { useState } from 'react';
 import SEO from '../../components/SEO';
 
@@ -28,49 +28,49 @@ const SpinnerPage = () => {
       <Row>
         <Col xs={12}>
           <Card style={{ position: 'relative' }}>
-            <div className="card-body">Some card content.</div>
+            <CardBody>Some card content.</CardBody>
             <Spinner>Loading...</Spinner>
           </Card>
         </Col>
         <Col xs={12}>
           <Card style={{ position: 'relative' }}>
-            <div className="card-body">Some card content.</div>
+            <CardBody>Some card content.</CardBody>
             <Spinner size="XS">Loading...</Spinner>
           </Card>
         </Col>
         <Col xs={12}>
           <Card style={{ position: 'relative' }}>
-            <div className="card-body">Some card content.</div>
+            <CardBody>Some card content.</CardBody>
             <Spinner size="SM">Loading...</Spinner>
           </Card>
         </Col>
         <Col xs={12}>
           <Card style={{ position: 'relative' }}>
-            <div className="card-body">Some card content.</div>
+            <CardBody>Some card content.</CardBody>
             <Spinner size="MD">Loading...</Spinner>
           </Card>
         </Col>
         <Col xs={12}>
           <Card style={{ position: 'relative' }}>
-            <div className="card-body">Some card content.</div>
+            <CardBody>Some card content.</CardBody>
             <Spinner size="LG">Loading...</Spinner>
           </Card>
         </Col>
         <Col xs={12}>
           <Card style={{ position: 'relative' }}>
-            <div className="card-body">Some card content.</div>
+            <CardBody>Some card content.</CardBody>
             <Spinner size="XL">Loading...</Spinner>
           </Card>
         </Col>
         <Col xs={12}>
           <Card style={{ position: 'relative' }}>
-            <div className="card-body">Some card content.</div>
+            <CardBody>Some card content.</CardBody>
             <Spinner size="XXL">Loading...</Spinner>
           </Card>
         </Col>
         <Col xs={12}>
           <Card>
-            <div className="card-body">
+            <CardBody>
               <Row>
                 <Col xs={6} md={4}>
                   <Button
@@ -106,7 +106,7 @@ const SpinnerPage = () => {
                   </Button>
                 </Col>
               </Row>
-            </div>
+            </CardBody>
           </Card>
         </Col>
         <Col xs={12}>

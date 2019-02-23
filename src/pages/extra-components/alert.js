@@ -1,4 +1,4 @@
-import { Row, Col, Card, Alert } from 'oah-ui';
+import { Row, Col, Card, CardBody, Alert } from 'oah-ui';
 import React from 'react';
 import SEO from '../../components/SEO';
 
@@ -10,7 +10,7 @@ const alert = () => {
         <Col xs={12}>
           <Card>
             <header>Alert Status</header>
-            <div className="card-body">
+            <CardBody>
               <Alert closable status="Success">
                 You have been successfully authenticated!
               </Alert>
@@ -32,13 +32,13 @@ const alert = () => {
               <Alert status="Disabled">
                 You have been successfully authenticated!
               </Alert>
-            </div>
+            </CardBody>
           </Card>
         </Col>
         <Col xs={12}>
           <Card>
             <header>Alert Accent</header>
-            <div className="card-body">
+            <CardBody>
               <Alert accent="Danger" status="Success">
                 You have been successfully authenticated!
               </Alert>
@@ -60,13 +60,13 @@ const alert = () => {
               <Alert accent="Success" status="Disabled">
                 You have been successfully authenticated!
               </Alert>
-            </div>
+            </CardBody>
           </Card>
         </Col>
         <Col xs={12}>
           <Card>
             <header>Alert Outline</header>
-            <div className="card-body">
+            <CardBody>
               <Alert outline="Success">
                 You have been successfully authenticated!
               </Alert>
@@ -88,13 +88,13 @@ const alert = () => {
               <Alert outline="Disabled">
                 You have been successfully authenticated!
               </Alert>
-            </div>
+            </CardBody>
           </Card>
         </Col>
         <Col xs={12}>
           <Card>
             <header>Alert Size</header>
-            <div className="card-body">
+            <CardBody>
               <Alert status="Danger" size="XXS">
                 You have been successfully authenticated!
               </Alert>
@@ -105,7 +105,7 @@ const alert = () => {
               <Alert status="Success" size="XXL">
                 You have been successfully authenticated!
               </Alert>
-            </div>
+            </CardBody>
           </Card>
         </Col>
       </Row>

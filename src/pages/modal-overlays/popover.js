@@ -3,6 +3,7 @@ import {
   Row,
   Col,
   Card,
+  CardBody,
   Button,
   Tabs,
   Tab,
@@ -20,7 +21,7 @@ export default function PopoverPage() {
         <Col xs={12} md={6}>
           <Card size="XS">
             <header>Popover Position</header>
-            <div className="card-body" id="popoverScroll">
+            <CardBody id="popoverScroll">
               <Popover
                 className="with-margin inline-block"
                 trigger="hover"
@@ -57,13 +58,13 @@ export default function PopoverPage() {
               >
                 <Button fullWidth>Bottom</Button>
               </Popover>
-            </div>
+            </CardBody>
           </Card>
         </Col>
         <Col xs={12} md={6}>
           <Card size="XS">
             <header>Simple Popovers</header>
-            <div className="card-body popoverScroll">
+            <CardBody className="popoverScroll">
               <Popover
                 eventListener=".popoverScroll"
                 className="with-margin inline-block"
@@ -94,7 +95,7 @@ export default function PopoverPage() {
                 overlay={
                   <Card className="popover-card">
                     <header>Hello!</header>
-                    <div className="card-body">Hello, how are you today?</div>
+                    <CardBody>Hello, how are you today?</CardBody>
                   </Card>
                 }
               >
@@ -108,7 +109,7 @@ export default function PopoverPage() {
                 overlay={
                   <Card className="popover-card">
                     <header>Hello!</header>
-                    <div className="card-body">Hello, how are you today?</div>
+                    <CardBody>Hello, how are you today?</CardBody>
                   </Card>
                 }
               >
@@ -125,7 +126,7 @@ export default function PopoverPage() {
               >
                 <Button fullWidth>Context Menu</Button>
               </ContextMenu>
-            </div>
+            </CardBody>
           </Card>
         </Col>
       </Row>
