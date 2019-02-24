@@ -17,7 +17,7 @@
     "gatsby-transformer-sharp": "^2.1.13",
     "gh-pages": "^2.0.1",
     "ionicons": "^4.5.5",
-    "oah-ui": "^0.0.0-31",
+    "oah-ui": "^0.1.0",
     "prop-types": "^15.7.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",

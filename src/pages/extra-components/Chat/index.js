@@ -22,7 +22,7 @@ export default function ChatPage() {
       reply: true,
       type: files.length ? 'file' : 'text',
       files,
-      sender: 'Jonh Doe',
+      sender: 'Ahmed Elywa',
       avatar: 'https://i.gifer.com/no.gif'
     };
     setMessages([...messages, newMessage]);

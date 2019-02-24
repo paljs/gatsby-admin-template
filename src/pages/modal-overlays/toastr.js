@@ -36,7 +36,7 @@ export default function ToastrPage() {
 
   const showToastr = () => {
     setCount(count + 1);
-    toastrRef.current.add(data.title + count, data.message, { ...data });
+    toastrRef.current.add(data.message, data.title + count, { ...data });
   };
 
   const onChangeHandle = (name, value) => {
@@ -77,6 +77,7 @@ export default function ToastrPage() {
               <Row>
                 <Col xs={12} md={6}>
                   <Select
+                    style={{ marginBottom: '1rem' }}
                     fullWidth
                     placeholder="Place to show toast"
                     options={positionOptions}
@@ -112,6 +113,7 @@ export default function ToastrPage() {
                 </Col>
                 <Col xs={12} md={6}>
                   <Select
+                    style={{ marginBottom: '1rem' }}
                     fullWidth
                     placeholder="Toast Status"
                     options={statusOption}

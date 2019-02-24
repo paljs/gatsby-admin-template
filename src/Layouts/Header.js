@@ -51,7 +51,7 @@ export default function Header(props) {
               }
             },
             {
-              content: <h3>OAH Admin</h3>
+              content: <h3 style={{ margin: 0 }}>OAH Admin</h3>
             },
             {
               content: (

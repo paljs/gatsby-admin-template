@@ -14,6 +14,14 @@ import SEO from '../../components/SEO';
 const style = { marginBottom: '1.5rem' };
 
 export default function ButtonPage() {
+  const status = [
+    'Info',
+    'Success',
+    'Danger',
+    'Primary',
+    'Warning',
+    'Secondary'
+  ];
   return (
     <>
       <SEO title="Button" keywords={['OAH', 'application', 'react']} />
@@ -23,36 +31,13 @@ export default function ButtonPage() {
             <header>Button Hero</header>
             <CardBody>
               <Row>
-                <Col style={style} xs={6} md={4} lg={2}>
-                  <Button fullWidth hero status="Primary" shape="Rectangle">
-                    Primary
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} md={4} lg={2}>
-                  <Button fullWidth hero status="Success" shape="Rectangle">
-                    Success
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} md={4} lg={2}>
-                  <Button fullWidth hero status="Danger" shape="Rectangle">
-                    Danger
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} md={4} lg={2}>
-                  <Button fullWidth hero status="Info" shape="Rectangle">
-                    Info
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} md={4} lg={2}>
-                  <Button fullWidth hero status="Warning" shape="Rectangle">
-                    Warning
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} md={4} lg={2}>
-                  <Button fullWidth hero status="Secondary" shape="Rectangle">
-                    Secondary
-                  </Button>
-                </Col>
+                {status.map(state => (
+                  <Col key={state} style={style} xs>
+                    <Button fullWidth hero status={state}>
+                      {state}
+                    </Button>
+                  </Col>
+                ))}
               </Row>
             </CardBody>
           </Card>
@@ -62,36 +47,13 @@ export default function ButtonPage() {
             <header>Button Colors</header>
             <CardBody>
               <Row>
-                <Col style={style} xs={6} md={4} lg={2}>
-                  <Button fullWidth status="Primary" shape="Rectangle">
-                    Primary
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} md={4} lg={2}>
-                  <Button fullWidth status="Success" shape="Rectangle">
-                    Success
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} md={4} lg={2}>
-                  <Button fullWidth status="Danger" shape="Rectangle">
-                    Danger
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} md={4} lg={2}>
-                  <Button fullWidth status="Info" shape="Rectangle">
-                    Info
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} md={4} lg={2}>
-                  <Button fullWidth status="Warning" shape="Rectangle">
-                    Warning
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} md={4} lg={2}>
-                  <Button fullWidth status="Secondary" shape="Rectangle">
-                    Secondary
-                  </Button>
-                </Col>
+                {status.map(state => (
+                  <Col key={state} style={style} xs>
+                    <Button fullWidth status={state}>
+                      {state}
+                    </Button>
+                  </Col>
+                ))}
               </Row>
             </CardBody>
           </Card>
@@ -101,41 +63,13 @@ export default function ButtonPage() {
             <header>Button Outline</header>
             <CardBody>
               <Row>
-                <Col style={style} xs={6} md={4} lg={2}>
-                  <Button fullWidth outline status="Primary" shape="Rectangle">
-                    Primary
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} md={4} lg={2}>
-                  <Button fullWidth outline status="Success" shape="Rectangle">
-                    Success
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} md={4} lg={2}>
-                  <Button fullWidth outline status="Danger" shape="Rectangle">
-                    Danger
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} md={4} lg={2}>
-                  <Button fullWidth outline status="Info" shape="Rectangle">
-                    Info
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} md={4} lg={2}>
-                  <Button fullWidth outline status="Warning" shape="Rectangle">
-                    Warning
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} md={4} lg={2}>
-                  <Button
-                    fullWidth
-                    outline
-                    status="Secondary"
-                    shape="Rectangle"
-                  >
-                    Secondary
-                  </Button>
-                </Col>
+                {status.map(state => (
+                  <Col key={state} style={style} xs>
+                    <Button fullWidth outline status={state}>
+                      {state}
+                    </Button>
+                  </Col>
+                ))}
               </Row>
             </CardBody>
           </Card>
@@ -145,26 +79,13 @@ export default function ButtonPage() {
             <header>Button Size</header>
             <CardBody>
               <Row middle="xs">
-                <Col style={style} xs={6} md={3}>
-                  <Button fullWidth size="XS" shape="Rectangle">
-                    X Small
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} md={3}>
-                  <Button fullWidth size="SM" shape="Rectangle">
-                    Small
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} md={3}>
-                  <Button fullWidth size="MD" shape="Rectangle">
-                    Medium
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} md={3}>
-                  <Button fullWidth size="LG" shape="Rectangle">
-                    Large
-                  </Button>
-                </Col>
+                {['XS', 'SM', 'MD', 'LG'].map(size => (
+                  <Col key={size} style={style} xs>
+                    <Button fullWidth size={size}>
+                      {size}
+                    </Button>
+                  </Col>
+                ))}
               </Row>
             </CardBody>
           </Card>
@@ -174,21 +95,13 @@ export default function ButtonPage() {
             <header>Button Shape</header>
             <CardBody>
               <Row middle="xs">
-                <Col style={style} xs={6} sm={4}>
-                  <Button fullWidth shape="Rectangle">
-                    Rectangle
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} sm={4}>
-                  <Button fullWidth shape="SemiRound">
-                    SemiRound
-                  </Button>
-                </Col>
-                <Col style={style} xs={6} sm={4}>
-                  <Button fullWidth shape="Round">
-                    Round
-                  </Button>
-                </Col>
+                {['Rectangle', 'SemiRound', 'Round'].map(shape => (
+                  <Col key={shape} style={style} xs>
+                    <Button fullWidth shape={shape}>
+                      {shape}
+                    </Button>
+                  </Col>
+                ))}
               </Row>
             </CardBody>
           </Card>
@@ -198,12 +111,12 @@ export default function ButtonPage() {
             <header>Button Elements</header>
             <CardBody>
               <Row middle="xs">
-                <Col style={style} xs={6} md={3}>
+                <Col style={style} xs>
                   <Button fullWidth shape="Rectangle">
                     Button
                   </Button>
                 </Col>
-                <Col style={style} xs={6} md={3}>
+                <Col style={style} xs>
                   <ButtonInput
                     fullWidth
                     shape="Rectangle"
@@ -211,7 +124,7 @@ export default function ButtonPage() {
                     value="Input button"
                   />
                 </Col>
-                <Col style={style} xs={6} md={3}>
+                <Col style={style} xs>
                   <ButtonInput
                     fullWidth
                     shape="Rectangle"
@@ -219,7 +132,7 @@ export default function ButtonPage() {
                     value="Input submit"
                   />
                 </Col>
-                <Col style={style} xs={6} md={3}>
+                <Col style={style} xs>
                   <ButtonLink
                     onClick={() => navigate('/')}
                     fullWidth
