@@ -115,5 +115,28 @@ export default [
         link: '/modal-overlays/toastr'
       }
     ]
+  },
+  {
+    title: 'Auth',
+    icon: 'icon ion-ios-lock',
+    link: '/auth',
+    children: [
+      {
+        title: 'Login',
+        link: '/auth/login'
+      },
+      {
+        title: 'Register',
+        link: '/auth/register'
+      },
+      {
+        title: 'Request Password',
+        link: '/auth/request-password'
+      },
+      {
+        title: 'Reset Password',
+        link: '/auth/reset-password'
+      }
+    ]
   }
 ];

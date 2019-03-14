@@ -14,7 +14,7 @@ import Header from './Header';
 import SimpleLayout from './SimpleLayout';
 import SidebarCustom from './Sidebar';
 
-export default function LayoutPage(props) {
+export default function LayoutPage({ children, pageContext }) {
   const [theme, setTheme] = useState('default');
   const [dir, setDir] = useState('ltr');
   const sidebarRef = useRef();
@@ -32,22 +32,30 @@ export default function LayoutPage(props) {
     <ThemeProvider theme={themes(theme, dir)}>
       <>
         <SimpleLayout />
-        <Layout dir={dir} windowMode>
-          <Header
-            dir={dir}
-            changeDir={changeDir}
-            changeTheme={changeTheme}
-            toggleSidebar={() => sidebarRef.current.toggle()}
-          />
+        <Layout
+          dir={dir}
+          windowMode
+          className={pageContext.layout === 'auth' ? 'auth-layout' : ''}
+        >
+          {pageContext.layout !== 'auth' && (
+            <Header
+              dir={dir}
+              changeDir={changeDir}
+              changeTheme={changeTheme}
+              toggleSidebar={() => sidebarRef.current.toggle()}
+            />
+          )}
           <LayoutContainer>
-            <SidebarCustom ref={sidebarRef} />
+            {pageContext.layout !== 'auth' && (
+              <SidebarCustom ref={sidebarRef} />
+            )}
             <LayoutContent>
               <LayoutColumns>
-                <LayoutColumn className="main-content">
-                  {props.children}
-                </LayoutColumn>
+                <LayoutColumn className="main-content">{children}</LayoutColumn>
               </LayoutColumns>
-              <LayoutFooter>Footer</LayoutFooter>
+              {pageContext.layout !== 'auth' && (
+                <LayoutFooter>Footer</LayoutFooter>
+              )}
             </LayoutContent>
           </LayoutContainer>
         </Layout>

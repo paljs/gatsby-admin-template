@@ -11,6 +11,27 @@ ${({ theme }) => css`
     flex: 0.15 !important;
   }
 
+  .auth-layout {
+    .main-content {
+      padding: 2.5rem;
+      ${breakpointDown('sm')`
+        padding: 0;
+      `}
+    }
+  }
+  a {
+    color: ${theme.linkColor};
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: ${theme.linkColorHover};
+    }
+    &:visited {
+      color: ${theme.linkColorVisited};
+    }
+  }
+
   aside.settings-sidebar {
     transition: transform 0.3s ease;
     width: 19rem;
