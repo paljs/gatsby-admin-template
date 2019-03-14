@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[26],{193:function(n,e,t){"use strict";t.r(e),t.d(e,"default",function(){return r});var u=t(0),c=t.n(u),i=t(22);function r(){return Object(u.useEffect)(function(){Object(i.navigate)("/ui-features/grid")}),c.a.createElement("div",null)}}}]);
-//# sourceMappingURL=component---src-pages-ui-features-index-js-c416ff65fab095e4bff3.js.map
