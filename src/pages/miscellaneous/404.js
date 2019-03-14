@@ -3,7 +3,7 @@ import { Card, CardBody, ButtonLink } from 'oah-ui';
 import { navigate } from 'gatsby';
 import styled from 'styled-components';
 
-import SEO from '../components/SEO';
+import SEO from '../../components/SEO';
 
 const ErrorStyle = styled.div`
   width: 100%;

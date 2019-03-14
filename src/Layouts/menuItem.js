@@ -117,6 +117,17 @@ export default [
     ]
   },
   {
+    title: 'Miscellaneous',
+    icon: 'icon ion-ios-shuffle',
+    link: '/miscellaneous',
+    children: [
+      {
+        title: '404',
+        link: '/miscellaneous/404'
+      }
+    ]
+  },
+  {
     title: 'Auth',
     icon: 'icon ion-ios-lock',
     link: '/auth',
