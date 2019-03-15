@@ -1,21 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, CardBody } from 'oah-ui';
-import { Editor } from '@tinymce/tinymce-react';
 import SEO from '../../components/SEO';
 
-import 'tinymce/plugins/table';
-import 'tinymce/plugins/link';
-import 'tinymce/plugins/image';
-import 'tinymce/plugins/code';
-
 export default function TinyMCE() {
+  const [editor, setEditor] = useState('');
+
+  useEffect(() => {
+    if (window) {
+      require('tinymce/plugins/table');
+      require('tinymce/plugins/link');
+      require('tinymce/plugins/image');
+      require('tinymce/plugins/code');
+      const { Editor } = require('@tinymce/tinymce-react');
+      setEditor(<Editor init={{ plugins: 'link table image code' }} />);
+    }
+  }, []);
+
   return (
     <Card>
       <SEO title="Tiny MCE" keywords={['OAH', 'application', 'react']} />
       <header>Tiny MCE</header>
-      <CardBody>
-        <Editor init={{ plugins: 'link table image code' }} />
-      </CardBody>
+      <CardBody>{editor}</CardBody>
     </Card>
   );
 }

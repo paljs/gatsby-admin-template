@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, CardBody } from 'oah-ui';
-import Editor from '@ckeditor/ckeditor5-react';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import SEO from '../../components/SEO';
 
 export default function CKEditor() {
+  const [editor, setEditor] = useState('');
+
+  useEffect(() => {
+    if (window) {
+      const ClassicEditor = require('@ckeditor/ckeditor5-build-classic');
+      const Editor = require('@ckeditor/ckeditor5-react');
+      setEditor(<Editor editor={ClassicEditor} />);
+    }
+  }, []);
+
   return (
     <Card>
       <SEO title="CKEditor" keywords={['OAH', 'application', 'react']} />
       <header>CKEditor</header>
-      <CardBody>
-        <Editor editor={ClassicEditor} config={{ height: '100%' }} />
-      </CardBody>
+      <CardBody>{editor}</CardBody>
     </Card>
   );
 }
