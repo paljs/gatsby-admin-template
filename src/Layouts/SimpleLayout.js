@@ -94,6 +94,9 @@ ${({ theme }) => css`
       box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
     }
   }
+  .ck-content {
+    min-height: 20rem;
+  }
 `}
 `;
 export default SimpleLayout;

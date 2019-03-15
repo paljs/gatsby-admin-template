@@ -117,6 +117,21 @@ export default [
     ]
   },
   {
+    title: 'Editors',
+    icon: 'icon ion-ios-paper',
+    link: '/editors',
+    children: [
+      {
+        title: 'TinyMCE',
+        link: '/editors/tinymce'
+      },
+      {
+        title: 'CKEditor',
+        link: '/editors/ckeditor'
+      }
+    ]
+  },
+  {
     title: 'Miscellaneous',
     icon: 'icon ion-ios-shuffle',
     link: '/miscellaneous',
