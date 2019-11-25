@@ -9,7 +9,7 @@
     "@ckeditor/ckeditor5-react": "^1.1.1",
     "@tinymce/tinymce-react": "^3.0.1",
     "babel-plugin-styled-components": "^1.10.6",
-    "gatsby": "^2.15.28",
+    "gatsby": "^2.18.3",
     "gatsby-image": "^2.2.23",
     "gatsby-plugin-layout": "^1.1.10",
     "gatsby-plugin-manifest": "^2.2.20",
@@ -19,13 +19,13 @@
     "gatsby-source-filesystem": "^2.1.28",
     "gatsby-transformer-sharp": "^2.2.19",
     "gh-pages": "^2.1.1",
-    "ionicons": "^4.5.5",
-    "oah-ui": "^0.1.2",
+    "ionicons": "^4.6.3",
+    "oah-ui": "^0.1.4",
     "prop-types": "^15.7.1",
-    "react": "^16.10.0",
-    "react-dom": "^16.10.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-helmet": "^5.2.0",
-    "styled-components": "^4.4.0",
+    "styled-components": "^4.4.1",
     "tinymce": "^5.0.2"
   },
   "keywords": [
@@ -51,6 +51,6 @@
     "url": "https://github.com/oahtech/oah-admin/issues"
   },
   "devDependencies": {
-    "eslint-plugin-react-hooks": "^2.1.0"
+    "eslint-plugin-react-hooks": "^2.3.0"
   }
 }
