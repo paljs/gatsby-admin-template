@@ -20,10 +20,10 @@ export default function Socials() {
     <SocialsStyle>
       <p>or enter with:</p>
       <div className="links">
-        <a href="https://github.com/oahtech">
+        <a href="https://github.com/AhmedElywa">
           <i className="icon ion-logo-github" />
         </a>
-        <a href="https://www.facebook.com/oahtech">
+        <a href="https://www.facebook.com/AhmedElywa">
           <i className="icon ion-logo-facebook" />
         </a>
         <a href="https://twitter.com/AhmedElywh">

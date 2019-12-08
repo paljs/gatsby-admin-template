@@ -3,13 +3,13 @@
   "private": true,
   "description": "Admin dashboard template based on Gatsby with oah-ui component package",
   "version": "0.1.0",
-  "author": "OAH Technology",
+  "author": "Ahmed Elywa",
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^12.0.0",
     "@ckeditor/ckeditor5-react": "^1.1.1",
     "@tinymce/tinymce-react": "^3.0.1",
     "babel-plugin-styled-components": "^1.10.6",
-    "gatsby": "^2.18.3",
+    "gatsby": "^2.18.7",
     "gatsby-image": "^2.2.23",
     "gatsby-plugin-layout": "^1.1.10",
     "gatsby-plugin-manifest": "^2.2.20",
@@ -45,10 +45,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/oahtech/oah-admin"
+    "url": "https://github.com/AhmedElywa/oah-admin"
   },
   "bugs": {
-    "url": "https://github.com/oahtech/oah-admin/issues"
+    "url": "https://github.com/AhmedElywa/oah-admin/issues"
   },
   "devDependencies": {
     "eslint-plugin-react-hooks": "^2.3.0"

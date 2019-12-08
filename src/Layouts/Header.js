@@ -79,7 +79,7 @@ export default function Header(props) {
           actions={[
             {
               icon: 'icon ion-logo-github',
-              url: 'https://github.com/oahtech/oah-admin',
+              url: 'https://github.com/AhmedElywa/oah-admin',
               target: '_blank'
             },
             {
@@ -100,7 +100,7 @@ export default function Header(props) {
                 >
                   <User
                     image="url('/icons/icon-72x72.png')"
-                    name="OAH Technology"
+                    name="Ahmed Elywa"
                     title="Manger"
                     size="MD"
                   />

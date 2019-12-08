@@ -3,7 +3,7 @@ module.exports = {
     title: 'OAH-Admin',
     description:
       'Admin dashboard template based on Gatsby with oah-ui component package.',
-    author: 'OAH Technology'
+    author: 'Ahmed Elywa'
   },
   plugins: [
     'gatsby-plugin-styled-components',

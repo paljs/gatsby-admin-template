@@ -33,7 +33,7 @@ export default function ChatPage() {
       <SEO title="Chat" keywords={['OAH', 'application', 'react']} />
       <Row>
         <Col xs={12} md={6} style={{ marginBottom: '1rem' }}>
-          <Chat title="OAH Technology">
+          <Chat title="Ahmed Elywa">
             <ChatMessages messages={messages} mapKey="API_KEY" />
             <ChatForm
               onSend={v => onSendHandle(v)}
