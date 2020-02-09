@@ -14,6 +14,18 @@ const HeaderStyle = styled.div`
       display: none;
     }
   `}
+  .right > div {
+    height: auto;
+    display: flex;
+    align-content: center;
+  }
+  .logo {
+      padding: 0 1.25rem;
+      font-size: 1.25rem;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+  }
 `;
 
 const Label = styled.span`
@@ -79,13 +91,17 @@ const Header: React.FC<HeaderProps> = props => {
           size="Medium"
           actions={[
             {
-              icon: 'menu-2-outline',
+              icon: { name: 'menu-2-outline' },
               url: {
                 onClick: props.toggleSidebar,
               },
             },
             {
-              content: <h3 style={{ margin: 0 }}>OAH Admin</h3>,
+              content: (
+                <Link to="/" className="logo">
+                  OAH Admin
+                </Link>
+              ),
             },
             {
               content: (

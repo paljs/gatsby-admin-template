@@ -12,6 +12,7 @@ const SidebarCustom: React.RefForwardingComponent<Omit<SidebarRefObject, 'hide'>
   const [menuState, setMenuState] = useState(false);
   const sidebarRef = useRef<SidebarRefObject>(null);
   const menuRef = useRef<MenuRefObject>(null);
+  const [seeHeader, setSeeHeader] = useState(true);
 
   useImperativeHandle(ref, () => ({
     toggle() {
@@ -19,22 +20,27 @@ const SidebarCustom: React.RefForwardingComponent<Omit<SidebarRefObject, 'hide'>
     },
   }));
 
-  return (
-    <Sidebar ref={sidebarRef} property="start" containerFixed responsive className="menu-sidebar">
-      <header>
-        <Button
-          size="Tiny"
-          status="Primary"
-          onClick={() => {
-            setMenuState(!menuState);
-            menuRef.current?.toggle();
-          }}
-          fullWidth
-        >
-          {menuState ? <EvaIcon name="arrow-circle-up" /> : <EvaIcon name="arrow-circle-down" />}
-        </Button>
-      </header>
+  const getState = (state?: 'hidden' | 'visible' | 'compacted' | 'expanded') => {
+    setSeeHeader(state !== 'compacted');
+  };
 
+  return (
+    <Sidebar getState={getState} ref={sidebarRef} property="start" containerFixed responsive className="menu-sidebar">
+      {seeHeader && (
+        <header>
+          <Button
+            size="Tiny"
+            status="Primary"
+            onClick={() => {
+              setMenuState(!menuState);
+              menuRef.current?.toggle();
+            }}
+            fullWidth
+          >
+            {menuState ? <EvaIcon name="arrow-circle-up" /> : <EvaIcon name="arrow-circle-down" />}
+          </Button>
+        </header>
+      )}
       <SidebarBody>
         <Location>
           {({ location }) => (

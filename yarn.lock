@@ -8551,10 +8551,10 @@ oah-eva-icon@^1.0.1:
   dependencies:
     eva-icons "^1.1.2"
 
-oah-ui@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/oah-ui/-/oah-ui-2.0.2.tgz#e112a14b5fe16e5854abd27e078e37eb39b1962d"
-  integrity sha512-Rm2hLHHNTsW1fDD57Ao9aCWdFuaczz/K7uLvXMmYUqAfVk8aJ0uNfTRcyhpFD61RwWkXxR2n3ZKMbA4hKUk26Q==
+oah-ui@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/oah-ui/-/oah-ui-2.0.5.tgz#b3c4a5bb7df70887619451bb5333ca2d38d47b76"
+  integrity sha512-kfCfRNe+z5aWVOQgyT4bUlKTK6Jtvt57EzL1Z8sdWnwbo5R45zIdkJrW3aDLoMmY++Rj1fHSXXFyj55ufJjsbg==
   dependencies:
     react-select "^3.0.8"
 
