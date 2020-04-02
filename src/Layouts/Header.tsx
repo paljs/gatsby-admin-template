@@ -20,7 +20,6 @@ const HeaderStyle = styled.div`
     align-content: center;
   }
   .logo {
-      padding: 0 1.25rem;
       font-size: 1.25rem;
       white-space: nowrap;
       text-decoration: none;
