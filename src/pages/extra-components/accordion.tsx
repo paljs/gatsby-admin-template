@@ -25,34 +25,46 @@ const Accordions = () => {
                   </Button>
                 </Col>
                 <Col style={style} breakPoint={{ xs: 12, lg: 4 }}>
-                  <Button fullWidth onClick={() => accordionRef.current?.open(0)}>
+                  <Button fullWidth onClick={() => accordionRef.current?.open(1)}>
                     open first
                   </Button>
                 </Col>
                 <Col style={style} breakPoint={{ xs: 12, lg: 4 }}>
-                  <Button fullWidth onClick={() => accordionRef.current?.close(0)}>
+                  <Button fullWidth onClick={() => accordionRef.current?.close(1)}>
                     close first
                   </Button>
                 </Col>
                 <Col style={style} breakPoint={{ xs: 12, lg: 4 }}>
-                  <Button fullWidth onClick={() => accordionRef.current?.toggle(0)}>
+                  <Button fullWidth onClick={() => accordionRef.current?.toggle(1)}>
                     toggle first
                   </Button>
                 </Col>
               </Row>
             </CardBody>
           </Card>
-          <Accordion ref={accordionRef}>
-            <AccordionItem title="head 1">Hello 1Hello 1Hello 1Hello 1</AccordionItem>
-            <AccordionItem title="head 2">Hello 2Hello 2Hello 2Hello 2</AccordionItem>
-            <AccordionItem title="head 3">Hello 3Hello 3Hello 3Hello 3</AccordionItem>
+          <Accordion>
+            <AccordionItem uniqueKey={1} title="head 1">
+              Hello 1Hello 1Hello 1Hello 1
+            </AccordionItem>
+            <AccordionItem uniqueKey={2} title="head 2">
+              Hello 2Hello 2Hello 2Hello 2
+            </AccordionItem>
+            <AccordionItem uniqueKey={3} title="head 3">
+              Hello 3Hello 3Hello 3Hello 3
+            </AccordionItem>
           </Accordion>
         </Col>
         <Col breakPoint={{ xs: 12, lg: 6 }}>
-          <Accordion multi>
-            <AccordionItem title="head 1">Hello 1Hello 1Hello 1Hello 1</AccordionItem>
-            <AccordionItem title="head 2">Hello 2Hello 2Hello 2Hello 2</AccordionItem>
-            <AccordionItem title="head 3">Hello 3Hello 3Hello 3Hello 3</AccordionItem>
+          <Accordion multi ref={accordionRef}>
+            <AccordionItem uniqueKey={1} title="head 1">
+              Hello 1Hello 1Hello 1Hello 1
+            </AccordionItem>
+            <AccordionItem uniqueKey={2} title="head 2">
+              Hello 2Hello 2Hello 2Hello 2
+            </AccordionItem>
+            <AccordionItem uniqueKey={3} title="head 3">
+              Hello 3Hello 3Hello 3Hello 3
+            </AccordionItem>
           </Accordion>
         </Col>
       </Row>

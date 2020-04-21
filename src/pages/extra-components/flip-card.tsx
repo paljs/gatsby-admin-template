@@ -1,4 +1,4 @@
-import { Row, Col, Card, CardBody, FlipCard } from 'oah-ui';
+import { Row, Col, Card, CardBody, FlipCard, CardHeader, CardFooter } from 'oah-ui';
 import React from 'react';
 import SEO from '../../components/SEO';
 
@@ -10,28 +10,28 @@ export default function FlipCards() {
         <Col breakPoint={{ xs: 12, md: 6 }}>
           <FlipCard>
             <Card>
-              <header>Front</header>
+              <CardHeader>Front</CardHeader>
               <CardBody>Hello Card component this body of card</CardBody>
-              <footer>Footer</footer>
+              <CardFooter>Footer</CardFooter>
             </Card>
             <Card>
-              <header>Back</header>
+              <CardHeader>Back</CardHeader>
               <CardBody>Hello Card component this body of card</CardBody>
-              <footer>Footer</footer>
+              <CardFooter>Footer</CardFooter>
             </Card>
           </FlipCard>
         </Col>
         <Col breakPoint={{ xs: 12, md: 6 }}>
           <FlipCard button="bottom">
             <Card status="Info" accent="Primary">
-              <header>Front</header>
+              <CardHeader>Front</CardHeader>
               <CardBody>Hello Card component this body of card</CardBody>
-              <footer>Footer</footer>
+              <CardFooter>Footer</CardFooter>
             </Card>
             <Card status="Primary" accent="Info">
-              <header>Back</header>
+              <CardHeader>Back</CardHeader>
               <CardBody>Hello Card component this body of card</CardBody>
-              <footer>Footer</footer>
+              <CardFooter>Footer</CardFooter>
             </Card>
           </FlipCard>
         </Col>

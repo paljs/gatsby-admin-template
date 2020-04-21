@@ -1,15 +1,27 @@
 import { Row, Col, Card, CardBody, Checkbox, Radio, InputGroup, Select } from 'oah-ui';
-import React from 'react';
+import React, { useState } from 'react';
 import SEO from '../../components/SEO';
+import styled from 'styled-components';
 
 const options = [
   { value: 'chocolate', label: 'Chocolate' },
   { value: 'strawberry', label: 'Strawberry' },
   { value: 'vanilla', label: 'Vanilla' },
 ];
+
+const Input = styled(InputGroup)`
+  margin-bottom: 10px;
+`;
+
 const InputPage = () => {
-  const onChangeCheckbox = (_value: any) => {
-    // value will be true or false
+  const [checkbox, setCheckbox] = useState({
+    1: false,
+    2: false,
+    3: false,
+  });
+
+  const onChangeCheckbox = (value: boolean, name: number) => {
+    setCheckbox({ ...checkbox, [name]: value });
   };
   const onChangeRadio = (_value: any) => {
     // value will be item value
@@ -22,40 +34,40 @@ const InputPage = () => {
           <Card>
             <header>Input status</header>
             <CardBody>
-              <InputGroup fullWidth size="Small">
+              <Input fullWidth size="Small">
                 <input type="text" placeholder="Size small" />
-              </InputGroup>
-              <InputGroup fullWidth size="Medium">
+              </Input>
+              <Input fullWidth size="Medium">
                 <input type="text" placeholder="Size Medium" />
-              </InputGroup>
-              <InputGroup fullWidth size="Large">
+              </Input>
+              <Input fullWidth size="Large">
                 <input type="text" placeholder="Size Large" />
-              </InputGroup>
-              <InputGroup fullWidth shape="Rectangle">
+              </Input>
+              <Input fullWidth shape="Rectangle">
                 <input type="text" placeholder="Rectangle border" />
-              </InputGroup>
-              <InputGroup fullWidth shape="SemiRound">
+              </Input>
+              <Input fullWidth shape="SemiRound">
                 <input type="text" placeholder="SemiRound border" />
-              </InputGroup>
-              <InputGroup fullWidth shape="Round">
+              </Input>
+              <Input fullWidth shape="Round">
                 <input type="text" placeholder="Round border" />
-              </InputGroup>
+              </Input>
               <Row>
                 <Col breakPoint={{ xs: 12, md: 6 }}>
-                  <InputGroup fullWidth>
+                  <Input fullWidth>
                     <input type="text" disabled />
-                  </InputGroup>
+                  </Input>
                 </Col>
                 <Col breakPoint={{ xs: 12, md: 6 }}>
-                  <InputGroup fullWidth>
+                  <Input fullWidth>
                     <input type="text" disabled placeholder="Disabled Input" />
-                  </InputGroup>
+                  </Input>
                 </Col>
               </Row>
               <Select fullWidth placeholder="Select" options={options} />
-              <InputGroup fullWidth shape="Round">
+              <Input fullWidth shape="Round">
                 <textarea rows={5} placeholder="Text Area" />
-              </InputGroup>
+              </Input>
             </CardBody>
           </Card>
         </Col>
@@ -63,18 +75,18 @@ const InputPage = () => {
           <Card>
             <header>Validation States</header>
             <CardBody>
-              <InputGroup fullWidth status="Info">
+              <Input fullWidth status="Info">
                 <input type="text" placeholder="Input with Info" />
-              </InputGroup>
-              <InputGroup fullWidth status="Warning">
+              </Input>
+              <Input fullWidth status="Warning">
                 <input name="text" placeholder="Input with Warning" />
-              </InputGroup>
-              <InputGroup fullWidth status="Success">
+              </Input>
+              <Input fullWidth status="Success">
                 <input type="text" placeholder="Input with Success" />
-              </InputGroup>
-              <InputGroup fullWidth status="Danger">
+              </Input>
+              <Input fullWidth status="Danger">
                 <input type="text" placeholder="Input with Danger" />
-              </InputGroup>
+              </Input>
               <Row>
                 <Col breakPoint={{ xs: 12 }}>
                   <Radio
@@ -102,17 +114,17 @@ const InputPage = () => {
               </Row>
               <Row>
                 <Col breakPoint={{ xs: 12, sm: 4 }}>
-                  <Checkbox status="Success" onChange={onChangeCheckbox}>
+                  <Checkbox checked={checkbox[1]} status="Success" onChange={value => onChangeCheckbox(value, 1)}>
                     Success
                   </Checkbox>
                 </Col>
                 <Col breakPoint={{ xs: 12, sm: 4 }}>
-                  <Checkbox status="Danger" onChange={onChangeCheckbox}>
+                  <Checkbox checked={checkbox[2]} status="Danger" onChange={value => onChangeCheckbox(value, 2)}>
                     Danger
                   </Checkbox>
                 </Col>
                 <Col breakPoint={{ xs: 12, sm: 4 }}>
-                  <Checkbox status="Warning" onChange={onChangeCheckbox}>
+                  <Checkbox checked={checkbox[3]} status="Warning" onChange={value => onChangeCheckbox(value, 3)}>
                     Warning
                   </Checkbox>
                 </Col>
