@@ -20,7 +20,7 @@
     "gatsby-source-filesystem": "2.1.48",
     "gatsby-transformer-sharp": "2.3.14",
     "oah-eva-icon": "1.0.1",
-    "oah-ui": "2.0.13",
+    "oah-ui": "2.1.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-helmet": "5.2.1",
