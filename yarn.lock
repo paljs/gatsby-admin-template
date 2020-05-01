@@ -9028,10 +9028,10 @@ oah-eva-icon@1.0.1:
   dependencies:
     eva-icons "^1.1.2"
 
-oah-ui@2.0.13:
-  version "2.0.13"
-  resolved "https://registry.yarnpkg.com/oah-ui/-/oah-ui-2.0.13.tgz#a164e7e0ff1e4482b598d78f8b0827dfa3a87ba8"
-  integrity sha512-mGouvuP/7sBBsWzzXs9Qd9hNebG6F7nWI/wGjuNZ7/ZKRBp9MVw1iBfCn0iqPhQZbVqFKYWjsNtwEVUGgO2L1g==
+oah-ui@2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/oah-ui/-/oah-ui-2.1.4.tgz#c155a56db379704cace7ab308ff516bc8b5f65ba"
+  integrity sha512-DzGPI5jlUnZxLcVwlcD/rgXcx1c6b8s28vfOfl9jcTBaPTvGxJmlCg8YYk4iprCzxRrArT8wCvH0yIu7/s+Teg==
   dependencies:
     react-select "^3.1.0"
 
