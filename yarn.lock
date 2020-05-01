@@ -1500,10 +1500,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tinymce/tinymce-react@3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@tinymce/tinymce-react/-/tinymce-react-3.4.0.tgz#5ca96bc7b9fdcfcddb2aa5e761d191bc783522b9"
-  integrity sha512-ABIWcjnfUtSMqAMhkQSxlWvex4Evgy3lSBMqJQ6Ib7lBDnYtolCrZYaszH2aBOADhdcgff+XfMfoK37ORWKq6w==
+"@tinymce/tinymce-react@3.5.1":
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/@tinymce/tinymce-react/-/tinymce-react-3.5.1.tgz#ba2743ffa9533d32ab2d948dcc0ee09779696927"
+  integrity sha512-o4BV0CaHBBqJriYxVfioJFNxqal/GjlEDtEhxPyaAnwHKyE9GcJrM4bEt212pcxi8Oj7lA7QleM9tiU+JT55yA==
   dependencies:
     prop-types "^15.6.2"
 
