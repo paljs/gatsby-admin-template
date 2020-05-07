@@ -1712,10 +1712,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tinymce/tinymce-react@3.5.1":
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/@tinymce/tinymce-react/-/tinymce-react-3.5.1.tgz#ba2743ffa9533d32ab2d948dcc0ee09779696927"
-  integrity sha512-o4BV0CaHBBqJriYxVfioJFNxqal/GjlEDtEhxPyaAnwHKyE9GcJrM4bEt212pcxi8Oj7lA7QleM9tiU+JT55yA==
+"@tinymce/tinymce-react@3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@tinymce/tinymce-react/-/tinymce-react-3.6.0.tgz#6e33e89b7bb0240c4ffa892a8e1924688f479b4b"
+  integrity sha512-XSyAx9Md9+Ghl3UK0YtBQxaS2dCepqtOKTjYmBS4xTAzSu1UABd44WT84B8CUCd/bdT0fv1Pd51dSbpgJ8713w==
   dependencies:
     prop-types "^15.6.2"
 
