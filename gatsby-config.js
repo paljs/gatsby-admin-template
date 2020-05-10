@@ -8,7 +8,12 @@ module.exports = {
   plugins: [
     'gatsby-plugin-styled-components',
     'gatsby-plugin-typescript',
-    `gatsby-plugin-layout`,
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/Layouts/index.tsx`),
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

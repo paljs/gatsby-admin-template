@@ -1,5 +1,5 @@
 import React from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
 const detailsQuery = graphql`
@@ -18,7 +18,7 @@ const SEO: React.FC<SEOProps> = ({ description, lang, meta, keywords, title }) =
   return (
     <StaticQuery
       query={detailsQuery}
-      render={data => {
+      render={(data) => {
         const metaDescription = description || data.site.siteMetadata.description;
         return (
           <Helmet
