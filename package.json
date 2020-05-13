@@ -51,7 +51,7 @@
   "devDependencies": {
     "@types/node": "13.13.6",
     "@types/react": "16.9.35",
-    "@types/react-dom": "16.9.7",
+    "@types/react-dom": "16.9.8",
     "@types/react-helmet": "6.0.0",
     "@types/react-select": "3.0.12",
     "@types/styled-components": "5.1.0",
