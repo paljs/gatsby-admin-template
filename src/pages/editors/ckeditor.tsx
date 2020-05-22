@@ -1,11 +1,12 @@
 import React from 'react';
 import { Card, CardBody } from 'oah-ui';
 import SEO from '../../components/SEO';
-import CKEditor from '@ckeditor/ckeditor5-react';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+
+const isSSR = typeof window === 'undefined';
+const CKEditor = !isSSR ? require('@ckeditor/ckeditor5-react') : <div />;
+const ClassicEditor = !isSSR ? require('@ckeditor/ckeditor5-build-classic') : <div />;
 
 export default function CKEditorPage() {
-  const isSSR = typeof window === 'undefined';
   return (
     <Card>
       <SEO title="CKEditor" keywords={['OAH', 'application', 'react']} />
