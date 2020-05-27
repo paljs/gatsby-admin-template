@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Ahmed Elywa",
   "dependencies": {
-    "@ckeditor/ckeditor5-build-classic": "19.0.0",
+    "@ckeditor/ckeditor5-build-classic": "19.0.1",
     "@ckeditor/ckeditor5-react": "2.1.0",
     "@tinymce/tinymce-react": "3.6.0",
     "babel-plugin-styled-components": "1.10.7",
