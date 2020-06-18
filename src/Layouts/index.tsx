@@ -34,7 +34,7 @@ const LayoutPage: React.FC<{ pageContext: { layout: string } }> = ({ children, p
     <ThemeProvider theme={themes(theme, dir)}>
       <>
         <SimpleLayout />
-        <Layout evaIcons={icons} dir={dir} windowMode className={pageContext.layout === 'auth' ? 'auth-layout' : ''}>
+        <Layout evaIcons={icons} dir={dir} className={pageContext.layout === 'auth' ? 'auth-layout' : ''}>
           {pageContext.layout !== 'auth' && (
             <Header
               dir={dir}
