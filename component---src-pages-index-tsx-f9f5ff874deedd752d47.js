@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[28],{QeBL:function(n,e,t){"use strict";t.r(e),t.d(e,"default",(function(){return a}));var c=t("q1tI"),o=t.n(c),u=t("Wbzz");function a(){return Object(c.useEffect)((function(){Object(u.navigate)("/extra-components/accordion")})),o.a.createElement("div",null)}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-f9f5ff874deedd752d47.js.map
