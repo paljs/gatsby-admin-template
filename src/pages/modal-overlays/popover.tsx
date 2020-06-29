@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Card, CardBody, Button, Tabs, Tab, Popover, ContextMenu } from 'oah-ui';
+import { Row, Col, Card, CardBody, Button, Tabs, Tab, Popover, ContextMenu } from '@paljs/ui';
 import { Link } from 'gatsby';
 import SEO from '../../components/SEO';
 

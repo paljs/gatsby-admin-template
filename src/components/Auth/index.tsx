@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { Card, CardBody } from 'oah-ui';
-import { breakpointDown } from 'oah-ui';
+import { Card, CardBody } from '@paljs/ui';
+import { breakpointDown } from '@paljs/ui';
 import React from 'react';
 
 const AuthStyle = styled.div<{ subTitle?: string }>`

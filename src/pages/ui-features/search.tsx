@@ -1,4 +1,4 @@
-import { Row, Col, Card, CardBody, Search, SearchProps } from 'oah-ui';
+import { Row, Col, Card, CardBody, Search, SearchProps } from '@paljs/ui';
 import React, { useState } from 'react';
 import SEO from '../../components/SEO';
 
@@ -18,12 +18,12 @@ export default function SearchPage() {
     <>
       <SEO title="Animated Searches" keywords={['OAH', 'application', 'react']} />
       <Row>
-        {type.map(key => (
+        {type.map((key) => (
           <Col breakPoint={{ xs: 12, md: 6 }} key={key}>
             <Card>
               <header>{key} Search</header>
               <CardBody>
-                <Search submit={v => submitHandle(v)} type={key} placeholder="Search..." hint="Hit Enter to search" />
+                <Search submit={(v) => submitHandle(v)} type={key} placeholder="Search..." hint="Hit Enter to search" />
               </CardBody>
               <footer>You Search for: {value}</footer>
             </Card>

@@ -1,5 +1,17 @@
 import React, { useRef, useState } from 'react';
-import { Row, Col, InputGroup, Checkbox, Toastr, Button, Card, CardBody, ToastrRef, ToastrProps, Select } from 'oah-ui';
+import {
+  Row,
+  Col,
+  InputGroup,
+  Checkbox,
+  Toastr,
+  Button,
+  Card,
+  CardBody,
+  ToastrRef,
+  ToastrProps,
+  Select,
+} from '@paljs/ui';
 import styled from 'styled-components';
 
 const SelectStyled = styled(Select)`
@@ -67,21 +79,26 @@ export default function ToastrPage() {
                   fullWidth
                   placeholder="Place to show toast"
                   options={positionOptions}
-                  value={positionOptions.find(position => position.value === data.position)}
+                  value={positionOptions.find((position) => position.value === data.position)}
                   onChange={(v: Option) => onChangeHandle('position', v.value)}
                 />
                 <InputGroup fullWidth>
-                  <input type="text" placeholder="Title" value={title} onChange={e => setTitle(e.target.value)} />
+                  <input type="text" placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)} />
                 </InputGroup>
                 <InputGroup fullWidth>
-                  <input type="text" placeholder="Message" value={message} onChange={e => setMessage(e.target.value)} />
+                  <input
+                    type="text"
+                    placeholder="Message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                  />
                 </InputGroup>
                 <InputGroup fullWidth>
                   <input
                     placeholder="Time to hide toast, ms. 0 to persistent toast"
                     type="number"
                     value={data.duration}
-                    onChange={e => onChangeHandle('duration', e.target.valueAsNumber)}
+                    onChange={(e) => onChangeHandle('duration', e.target.valueAsNumber)}
                   />
                 </InputGroup>
               </Col>
@@ -90,17 +107,17 @@ export default function ToastrPage() {
                   fullWidth
                   placeholder="Toast Status"
                   options={statusOption}
-                  value={statusOption.find(state => state.value === data.status)}
+                  value={statusOption.find((state) => state.value === data.status)}
                   onChange={(v: Option) => onChangeHandle('status', v.value)}
                 />
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
-                  <Checkbox checked={data.destroyByClick} onChange={v => onChangeHandle('destroyByClick', v)}>
+                  <Checkbox checked={data.destroyByClick} onChange={(v) => onChangeHandle('destroyByClick', v)}>
                     Hide on click
                   </Checkbox>
-                  <Checkbox checked={data.preventDuplicates} onChange={v => onChangeHandle('preventDuplicates', v)}>
+                  <Checkbox checked={data.preventDuplicates} onChange={(v) => onChangeHandle('preventDuplicates', v)}>
                     Prevent arising of duplicate toast
                   </Checkbox>
-                  <Checkbox checked={data.hasIcon} onChange={v => onChangeHandle('hasIcon', v)}>
+                  <Checkbox checked={data.hasIcon} onChange={(v) => onChangeHandle('hasIcon', v)}>
                     Show toast with icon
                   </Checkbox>
                 </div>

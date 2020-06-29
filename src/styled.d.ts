@@ -1,5 +1,5 @@
 import 'styled-components';
-import { ThemeObject } from 'oah-ui';
+import { ThemeObject } from '@paljs/ui';
 declare module 'styled-components' {
   export interface DefaultTheme extends ThemeObject {
     name: 'cosmic' | 'corporate' | 'dark' | 'default';

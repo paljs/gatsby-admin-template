@@ -1,4 +1,4 @@
-import { Row, Col, Card, CardBody, Checkbox, Radio, InputGroup, Select } from 'oah-ui';
+import { Row, Col, Card, CardBody, Checkbox, Radio, InputGroup, Select } from '@paljs/ui';
 import React, { useState } from 'react';
 import SEO from '../../components/SEO';
 import styled from 'styled-components';
@@ -114,17 +114,17 @@ const InputPage = () => {
               </Row>
               <Row>
                 <Col breakPoint={{ xs: 12, sm: 4 }}>
-                  <Checkbox checked={checkbox[1]} status="Success" onChange={value => onChangeCheckbox(value, 1)}>
+                  <Checkbox checked={checkbox[1]} status="Success" onChange={(value) => onChangeCheckbox(value, 1)}>
                     Success
                   </Checkbox>
                 </Col>
                 <Col breakPoint={{ xs: 12, sm: 4 }}>
-                  <Checkbox checked={checkbox[2]} status="Danger" onChange={value => onChangeCheckbox(value, 2)}>
+                  <Checkbox checked={checkbox[2]} status="Danger" onChange={(value) => onChangeCheckbox(value, 2)}>
                     Danger
                   </Checkbox>
                 </Col>
                 <Col breakPoint={{ xs: 12, sm: 4 }}>
-                  <Checkbox checked={checkbox[3]} status="Warning" onChange={value => onChangeCheckbox(value, 3)}>
+                  <Checkbox checked={checkbox[3]} status="Warning" onChange={(value) => onChangeCheckbox(value, 3)}>
                     Warning
                   </Checkbox>
                 </Col>

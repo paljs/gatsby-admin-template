@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardBody, ButtonLink } from 'oah-ui';
+import { Card, CardBody, ButtonLink } from '@paljs/ui';
 import { navigate } from 'gatsby';
 import styled from 'styled-components';
 

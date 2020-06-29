@@ -1,4 +1,4 @@
-import { Row, Col, Card, Chat, CardBody, ChatForm, ChatMessages, MessageProps, AttachedFile } from 'oah-ui';
+import { Row, Col, Card, Chat, CardBody, ChatForm, ChatMessages, MessageProps, AttachedFile } from '@paljs/ui';
 import React, { useState } from 'react';
 import SEO from '../../../components/SEO';
 import defaultMessages from '../../../components/messages';
@@ -9,7 +9,7 @@ export default function ChatPage() {
   const onSendHandle = (v: { message: string; files: AttachedFile[] }) => {
     const files = !v.files
       ? []
-      : v.files.map(file => {
+      : v.files.map((file) => {
           return {
             url: file.src as string,
             type: file.type,
@@ -35,7 +35,7 @@ export default function ChatPage() {
         <Col breakPoint={{ xs: 12, md: 6 }} style={{ marginBottom: '1rem' }}>
           <Chat title="OAH Technology">
             <ChatMessages messages={messages} mapKey="API_KEY" />
-            <ChatForm onSend={v => onSendHandle(v)} dropFiles filesIcon="document" />
+            <ChatForm onSend={(v) => onSendHandle(v)} dropFiles filesIcon="document" />
           </Chat>
         </Col>
         <Col breakPoint={{ xs: 12, md: 6 }}>

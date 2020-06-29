@@ -1,4 +1,4 @@
-import { MenuItemType } from 'oah-ui';
+import { MenuItemType } from '@paljs/ui';
 
 const items: MenuItemType[] = [
   {

@@ -1,4 +1,4 @@
-import { Row, Col, Card, List, ListItem, User } from 'oah-ui';
+import { Row, Col, Card, List, ListItem, User } from '@paljs/ui';
 import React from 'react';
 import SEO from '../../components/SEO';
 

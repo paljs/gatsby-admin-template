@@ -1,4 +1,4 @@
-import { Col, Row, RevealCard, Card, CardBody, CardHeader, CardFooter } from 'oah-ui';
+import { Col, Row, RevealCard, Card, CardBody, CardHeader, CardFooter } from '@paljs/ui';
 import React from 'react';
 import SEO from '../../components/SEO';
 

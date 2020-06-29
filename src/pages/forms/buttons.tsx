@@ -1,4 +1,4 @@
-import { Row, Col, Card, CardBody, Button, ButtonLink, Status, Size, Shape } from 'oah-ui';
+import { Row, Col, Card, CardBody, Button, ButtonLink, Status, Size, Shape } from '@paljs/ui';
 import { navigate } from 'gatsby';
 import React from 'react';
 import SEO from '../../components/SEO';
@@ -16,7 +16,7 @@ export default function ButtonPage() {
             <header>Button Hero</header>
             <CardBody>
               <Row>
-                {status.map(state => (
+                {status.map((state) => (
                   <Col key={state} style={style} breakPoint={{ xs: true }}>
                     <Button fullWidth appearance="hero" status={state}>
                       {state}
@@ -32,7 +32,7 @@ export default function ButtonPage() {
             <header>Button Colors</header>
             <CardBody>
               <Row>
-                {status.map(state => (
+                {status.map((state) => (
                   <Col key={state} style={style} breakPoint={{ xs: true }}>
                     <Button fullWidth status={state}>
                       {state}
@@ -48,7 +48,7 @@ export default function ButtonPage() {
             <header>Button Outline</header>
             <CardBody>
               <Row>
-                {status.map(state => (
+                {status.map((state) => (
                   <Col key={state} style={style} breakPoint={{ xs: true }}>
                     <Button fullWidth appearance="outline" status={state}>
                       {state}
@@ -64,7 +64,7 @@ export default function ButtonPage() {
             <header>Button Size</header>
             <CardBody>
               <Row middle="xs">
-                {(['Tiny', 'Small', 'Medium', 'Large', 'Giant'] as Size[]).map(size => (
+                {(['Tiny', 'Small', 'Medium', 'Large', 'Giant'] as Size[]).map((size) => (
                   <Col key={size} style={style} breakPoint={{ xs: true }}>
                     <Button fullWidth size={size}>
                       {size}
@@ -80,7 +80,7 @@ export default function ButtonPage() {
             <header>Button Shape</header>
             <CardBody>
               <Row middle="xs">
-                {(['Rectangle', 'SemiRound', 'Round'] as Shape[]).map(shape => (
+                {(['Rectangle', 'SemiRound', 'Round'] as Shape[]).map((shape) => (
                   <Col key={shape} style={style} breakPoint={{ xs: true }}>
                     <Button fullWidth shape={shape}>
                       {shape}

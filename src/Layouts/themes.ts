@@ -1,4 +1,4 @@
-import { createTheme } from 'oah-ui';
+import { createTheme } from '@paljs/ui';
 import { DefaultTheme } from 'styled-components';
 
 const shared: Partial<DefaultTheme> = {

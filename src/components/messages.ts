@@ -1,4 +1,4 @@
-import { MessageProps } from 'oah-ui';
+import { MessageProps } from '@paljs/ui';
 
 const messages: MessageProps[] = [
   {

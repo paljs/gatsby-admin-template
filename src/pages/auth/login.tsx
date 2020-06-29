@@ -1,4 +1,4 @@
-import { InputGroup, Checkbox, Button } from 'oah-ui';
+import { InputGroup, Checkbox, Button } from '@paljs/ui';
 import React from 'react';
 import { Link } from 'gatsby';
 

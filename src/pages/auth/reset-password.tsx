@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputGroup, Button } from 'oah-ui';
+import { InputGroup, Button } from '@paljs/ui';
 import { Link } from 'gatsby';
 
 import SEO from '../../components/SEO';

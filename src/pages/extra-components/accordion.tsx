@@ -1,4 +1,4 @@
-import { Accordion, AccordionItem, Card, CardBody, Col, Row, Button, AccordionRefObject } from 'oah-ui';
+import { Accordion, AccordionItem, Card, CardBody, Col, Row, Button, AccordionRefObject } from '@paljs/ui';
 import React, { useRef } from 'react';
 import SEO from '../../components/SEO';
 

@@ -1,4 +1,4 @@
-import { Row, Col, Card, CardBody, Actions, Progress, Status } from 'oah-ui';
+import { Row, Col, Card, CardBody, Actions, Progress, Status } from '@paljs/ui';
 import styled from 'styled-components';
 import React, { useState, useEffect } from 'react';
 import SEO from '../../components/SEO';

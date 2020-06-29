@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardBody } from 'oah-ui';
+import { Card, CardBody } from '@paljs/ui';
 import SEO from '../../components/SEO';
 import { Editor } from '@tinymce/tinymce-react';
 

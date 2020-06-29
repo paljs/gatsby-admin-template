@@ -9,8 +9,8 @@ import {
   LayoutColumns,
   LayoutColumn,
   SidebarRefObject,
-} from 'oah-ui';
-import icons from 'oah-eva-icon';
+} from '@paljs/ui';
+import icons from '@paljs/eva-icon';
 
 import Header from './Header';
 import SimpleLayout from './SimpleLayout';

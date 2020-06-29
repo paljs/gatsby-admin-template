@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled, { DefaultTheme } from 'styled-components';
-import { Actions, Select, LayoutHeader, Button, User, ContextMenu, breakpointDown, EvaIcon } from 'oah-ui';
+import { Actions, Select, LayoutHeader, Button, User, ContextMenu, breakpointDown, EvaIcon } from '@paljs/ui';
 import { getPathReady } from './Sidebar';
 import { Location } from '@reach/router';
 
@@ -43,7 +43,7 @@ interface HeaderProps {
   dir: 'rtl' | 'ltr';
 }
 
-const Header: React.FC<HeaderProps> = props => {
+const Header: React.FC<HeaderProps> = (props) => {
   const themeOptions = [
     {
       value: 'default',
@@ -98,7 +98,7 @@ const Header: React.FC<HeaderProps> = props => {
             {
               content: (
                 <Link to="/" className="logo">
-                  OAH Admin
+                  Admin Template
                 </Link>
               ),
             },
@@ -128,7 +128,7 @@ const Header: React.FC<HeaderProps> = props => {
           actions={[
             {
               icon: 'github',
-              url: { href: 'https://github.com/AhmedElywa/oah-admin', target: '_blank' },
+              url: { href: 'https://github.com/paljs/gatsby-admin-template', target: '_blank' },
             },
             {
               icon: 'twitter',
@@ -148,7 +148,7 @@ const Header: React.FC<HeaderProps> = props => {
                       ]}
                       Link={Link}
                     >
-                      <User image="url('/icons/icon-72x72.png')" name="OAH Technology" title="Manger" size="Medium" />
+                      <User image="url('/icons/icon-72x72.png')" name="Ahmed Elywa" title="Manger" size="Medium" />
                     </ContextMenu>
                   )}
                 </Location>

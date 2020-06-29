@@ -1,4 +1,4 @@
-import { Row, Col, Card, CardBody, Actions, ActionType } from 'oah-ui';
+import { Row, Col, Card, CardBody, Actions, ActionType } from '@paljs/ui';
 import React from 'react';
 import { Link } from 'gatsby';
 import SEO from '../../components/SEO';

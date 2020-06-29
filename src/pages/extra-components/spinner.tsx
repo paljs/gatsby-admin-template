@@ -1,4 +1,4 @@
-import { Row, Col, Card, CardBody, Button, Spinner, Tabs, Tab } from 'oah-ui';
+import { Row, Col, Card, CardBody, Button, Spinner, Tabs, Tab } from '@paljs/ui';
 import React, { useState } from 'react';
 import SEO from '../../components/SEO';
 
@@ -90,7 +90,7 @@ const SpinnerPage = () => {
         </Col>
         <Col breakPoint={{ xs: 12 }}>
           <Card>
-            <Tabs activeIndex={activeTab} fullWidth onSelect={i => onSelect(i)}>
+            <Tabs activeIndex={activeTab} fullWidth onSelect={(i) => onSelect(i)}>
               <Tab title="Tab 1" badge={{ status: 'Danger', title: '11', position: 'topStart' }} responsive>
                 <div style={{ position: 'relative' }}>
                   <h1>Content 1</h1>
