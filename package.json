@@ -43,10 +43,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AhmedElywa/oah-admin"
+    "url": "https://github.com/paljs/gatsby-admin-template"
   },
   "bugs": {
-    "url": "https://github.com/AhmedElywa/oah-admin/issues"
+    "url": "https://github.com/paljs/gatsby-admin-template/issues"
   },
   "devDependencies": {
     "@types/node": "14.0.14",
