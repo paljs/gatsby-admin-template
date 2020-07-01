@@ -1,6 +1,10 @@
-import { Row, Col, Card, CardBody, breakpointUp } from '@paljs/ui';
+import { Card, CardBody } from '@paljs/ui/Card';
+import { breakpointUp } from '@paljs/ui/breakpoints';
+import Row from '@paljs/ui/Row';
+import Col from '@paljs/ui/Col';
 import styled, { css } from 'styled-components';
 import React from 'react';
+
 import SEO from '../../components/SEO';
 
 interface BoxProps {

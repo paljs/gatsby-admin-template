@@ -1,4 +1,8 @@
-import { Row, Col, Card, List, ListItem, User } from '@paljs/ui';
+import { List, ListItem } from '@paljs/ui/List';
+import { Card } from '@paljs/ui/Card';
+import User from '@paljs/ui/User';
+import Row from '@paljs/ui/Row';
+import Col from '@paljs/ui/Col';
 import React from 'react';
 import SEO from '../../components/SEO';
 

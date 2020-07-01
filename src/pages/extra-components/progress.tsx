@@ -1,4 +1,9 @@
-import { Row, Col, Card, CardBody, Actions, Progress, Status } from '@paljs/ui';
+import Progress from '@paljs/ui/ProgressBar';
+import { Status } from '@paljs/ui/types';
+import { Card, CardBody } from '@paljs/ui/Card';
+import { Actions } from '@paljs/ui/Actions';
+import Row from '@paljs/ui/Row';
+import Col from '@paljs/ui/Col';
 import styled from 'styled-components';
 import React, { useState, useEffect } from 'react';
 import SEO from '../../components/SEO';

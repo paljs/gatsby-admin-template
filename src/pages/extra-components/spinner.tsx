@@ -1,4 +1,9 @@
-import { Row, Col, Card, CardBody, Button, Spinner, Tabs, Tab } from '@paljs/ui';
+import { Button } from '@paljs/ui/Button';
+import Spinner from '@paljs/ui/Spinner';
+import { Tabs, Tab } from '@paljs/ui/Tabs';
+import Row from '@paljs/ui/Row';
+import Col from '@paljs/ui/Col';
+import { Card, CardBody } from '@paljs/ui/Card';
 import React, { useState } from 'react';
 import SEO from '../../components/SEO';
 

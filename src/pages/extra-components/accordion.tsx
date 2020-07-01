@@ -1,4 +1,8 @@
-import { Accordion, AccordionItem, Card, CardBody, Col, Row, Button, AccordionRefObject } from '@paljs/ui';
+import { Accordion, AccordionItem, AccordionRefObject } from '@paljs/ui/Accordion';
+import { Button } from '@paljs/ui/Button';
+import { Card, CardBody } from '@paljs/ui/Card';
+import Row from '@paljs/ui/Row';
+import Col from '@paljs/ui/Col';
 import React, { useRef } from 'react';
 import SEO from '../../components/SEO';
 

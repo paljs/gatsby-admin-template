@@ -1,4 +1,4 @@
-import { MenuItemType } from '@paljs/ui';
+import { MenuItemType } from '@paljs/ui/types';
 
 const items: MenuItemType[] = [
   {
@@ -44,7 +44,7 @@ const items: MenuItemType[] = [
       },
       {
         title: 'Chat',
-        link: { to: '/extra-components/Chat' },
+        link: { to: '/extra-components/chat' },
       },
       {
         title: 'Cards',

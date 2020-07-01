@@ -1,7 +1,10 @@
-import { Row, Col, Card, CardBody, Select } from '@paljs/ui';
+import Select from '@paljs/ui/Select';
+import { Card, CardBody } from '@paljs/ui/Card';
+import Col from '@paljs/ui/Col';
+import Row from '@paljs/ui/Row';
 import React from 'react';
-import SEO from '../../components/SEO';
 import styled from 'styled-components';
+import SEO from '../../components/SEO';
 
 export const SelectStyled = styled(Select)`
   margin-bottom: 1rem;

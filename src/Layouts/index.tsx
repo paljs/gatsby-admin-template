@@ -1,17 +1,9 @@
 import React, { useState, useRef } from 'react';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
 import themes from './themes';
-import {
-  Layout,
-  LayoutContent,
-  LayoutFooter,
-  LayoutContainer,
-  LayoutColumns,
-  LayoutColumn,
-  SidebarRefObject,
-} from '@paljs/ui';
-import icons from '@paljs/eva-icon';
-
+import { Layout, LayoutContent, LayoutFooter, LayoutContainer, LayoutColumns, LayoutColumn } from '@paljs/ui/Layout';
+import icons from '@paljs/icons';
+import { SidebarRefObject } from '@paljs/ui/Sidebar';
 import Header from './Header';
 import SimpleLayout from './SimpleLayout';
 import SidebarCustom from './Sidebar';

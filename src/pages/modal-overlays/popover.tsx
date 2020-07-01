@@ -1,6 +1,13 @@
 import React from 'react';
-import { Row, Col, Card, CardBody, Button, Tabs, Tab, Popover, ContextMenu } from '@paljs/ui';
+import ContextMenu from '@paljs/ui/ContextMenu';
+import Col from '@paljs/ui/Col';
+import Row from '@paljs/ui/Row';
+import Popover from '@paljs/ui/Popover';
+import { Tabs, Tab } from '@paljs/ui/Tabs';
+import { Card, CardBody } from '@paljs/ui/Card';
+import { Button } from '@paljs/ui/Button';
 import { Link } from 'gatsby';
+
 import SEO from '../../components/SEO';
 
 export default function PopoverPage() {

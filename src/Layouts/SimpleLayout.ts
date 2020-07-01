@@ -1,5 +1,6 @@
 import { createGlobalStyle, css } from 'styled-components';
-import { breakpointDown, GlobalStyle } from '@paljs/ui';
+import GlobalStyle from '@paljs/ui/GlobalStyle';
+import { breakpointDown } from '@paljs/ui/breakpoints';
 
 const SimpleLayout = createGlobalStyle`
 ${({ theme }) => css`

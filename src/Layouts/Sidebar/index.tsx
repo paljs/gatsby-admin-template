@@ -1,5 +1,8 @@
 import React, { useRef, useState, forwardRef, useImperativeHandle } from 'react';
-import { Sidebar, Menu, SidebarBody, Button, MenuRefObject, SidebarRefObject, SidebarProps, EvaIcon } from '@paljs/ui';
+import { SidebarBody, SidebarRefObject, SidebarProps, Sidebar } from '@paljs/ui/Sidebar';
+import { Menu, MenuRefObject } from '@paljs/ui/Menu';
+import { Button } from '@paljs/ui/Button';
+import { EvaIcon } from '@paljs/ui/Icon';
 import menuItems from '../menuItem';
 import { Link } from 'gatsby';
 import { Location } from '@reach/router';
@@ -8,7 +11,7 @@ export const getPathReady = (path: string) => {
   return path.endsWith('/') ? path.slice(0, -1) : path;
 };
 
-const SidebarCustom: React.RefForwardingComponent<Omit<SidebarRefObject, 'hide'>, SidebarProps> = (props, ref) => {
+const SidebarCustom: React.ForwardRefRenderFunction<Omit<SidebarRefObject, 'hide'>, SidebarProps> = (props, ref) => {
   const [menuState, setMenuState] = useState(false);
   const sidebarRef = useRef<SidebarRefObject>(null);
   const menuRef = useRef<MenuRefObject>(null);

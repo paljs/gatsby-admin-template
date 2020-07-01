@@ -1,9 +1,16 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled, { DefaultTheme } from 'styled-components';
-import { Actions, Select, LayoutHeader, Button, User, ContextMenu, breakpointDown, EvaIcon } from '@paljs/ui';
+import Select from '@paljs/ui/Select';
+import { LayoutHeader } from '@paljs/ui/Layout';
+import { EvaIcon } from '@paljs/ui/Icon';
+import { Button } from '@paljs/ui/Button';
+import { Actions } from '@paljs/ui/Actions';
+import ContextMenu from '@paljs/ui/ContextMenu';
+import User from '@paljs/ui/User';
 import { getPathReady } from './Sidebar';
 import { Location } from '@reach/router';
+import { breakpointDown } from '@paljs/ui/breakpoints';
 
 const HeaderStyle = styled.div`
   display: flex;
@@ -20,10 +27,9 @@ const HeaderStyle = styled.div`
     align-content: center;
   }
   .logo {
-      font-size: 1.25rem;
-      white-space: nowrap;
-      text-decoration: none;
-    }
+    font-size: 1.25rem;
+    white-space: nowrap;
+    text-decoration: none;
   }
 `;
 

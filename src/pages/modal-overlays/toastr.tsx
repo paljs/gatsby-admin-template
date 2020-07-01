@@ -1,17 +1,12 @@
 import React, { useRef, useState } from 'react';
-import {
-  Row,
-  Col,
-  InputGroup,
-  Checkbox,
-  Toastr,
-  Button,
-  Card,
-  CardBody,
-  ToastrRef,
-  ToastrProps,
-  Select,
-} from '@paljs/ui';
+import { Toastr, ToastrRef, ToastrProps } from '@paljs/ui/Toastr';
+import Row from '@paljs/ui/Row';
+import Col from '@paljs/ui/Col';
+import { Card, CardBody } from '@paljs/ui/Card';
+import { Button } from '@paljs/ui/Button';
+import { Checkbox } from '@paljs/ui/Checkbox';
+import { InputGroup } from '@paljs/ui/Input';
+import Select from '@paljs/ui/Select';
 import styled from 'styled-components';
 
 const SelectStyled = styled(Select)`
@@ -111,13 +106,13 @@ export default function ToastrPage() {
                   onChange={(v: Option) => onChangeHandle('status', v.value)}
                 />
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
-                  <Checkbox checked={data.destroyByClick} onChange={(v) => onChangeHandle('destroyByClick', v)}>
+                  <Checkbox checked={!!data.destroyByClick} onChange={(v) => onChangeHandle('destroyByClick', v)}>
                     Hide on click
                   </Checkbox>
-                  <Checkbox checked={data.preventDuplicates} onChange={(v) => onChangeHandle('preventDuplicates', v)}>
+                  <Checkbox checked={!!data.preventDuplicates} onChange={(v) => onChangeHandle('preventDuplicates', v)}>
                     Prevent arising of duplicate toast
                   </Checkbox>
-                  <Checkbox checked={data.hasIcon} onChange={(v) => onChangeHandle('hasIcon', v)}>
+                  <Checkbox checked={!!data.hasIcon} onChange={(v) => onChangeHandle('hasIcon', v)}>
                     Show toast with icon
                   </Checkbox>
                 </div>

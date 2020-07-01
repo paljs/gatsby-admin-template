@@ -1,4 +1,7 @@
-import { Row, Col, Card, CardBody, FlipCard, CardHeader, CardFooter } from '@paljs/ui';
+import { Card, CardBody, CardHeader, CardFooter } from '@paljs/ui/Card';
+import FlipCard from '@paljs/ui/FlipCard';
+import Row from '@paljs/ui/Row';
+import Col from '@paljs/ui/Col';
 import React from 'react';
 import SEO from '../../components/SEO';
 

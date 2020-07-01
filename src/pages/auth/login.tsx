@@ -1,4 +1,6 @@
-import { InputGroup, Checkbox, Button } from '@paljs/ui';
+import { Button } from '@paljs/ui/Button';
+import { InputGroup } from '@paljs/ui/Input';
+import { Checkbox } from '@paljs/ui/Checkbox';
 import React from 'react';
 import { Link } from 'gatsby';
 

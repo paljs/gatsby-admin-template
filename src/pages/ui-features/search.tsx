@@ -1,4 +1,7 @@
-import { Row, Col, Card, CardBody, Search, SearchProps } from '@paljs/ui';
+import { Search, SearchProps } from '@paljs/ui/Search';
+import { Card, CardBody } from '@paljs/ui/Card';
+import Row from '@paljs/ui/Row';
+import Col from '@paljs/ui/Col';
 import React, { useState } from 'react';
 import SEO from '../../components/SEO';
 

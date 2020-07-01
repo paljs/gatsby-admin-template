@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardBody } from '@paljs/ui';
+import { Card, CardBody } from '@paljs/ui/Card';
 import SEO from '../../components/SEO';
 
 const isSSR = typeof window === 'undefined';

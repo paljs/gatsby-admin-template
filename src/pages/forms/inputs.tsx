@@ -1,7 +1,13 @@
-import { Row, Col, Card, CardBody, Checkbox, Radio, InputGroup, Select } from '@paljs/ui';
+import Select from '@paljs/ui/Select';
+import { Radio } from '@paljs/ui/Radio';
+import { Card, CardBody } from '@paljs/ui/Card';
+import { Checkbox } from '@paljs/ui/Checkbox';
+import { InputGroup } from '@paljs/ui/Input';
+import Col from '@paljs/ui/Col';
+import Row from '@paljs/ui/Row';
 import React, { useState } from 'react';
-import SEO from '../../components/SEO';
 import styled from 'styled-components';
+import SEO from '../../components/SEO';
 
 const options = [
   { value: 'chocolate', label: 'Chocolate' },
