@@ -1,13 +1,13 @@
-### OAH-Admin
+### gatsby-admin-template
 
-Admin dashboard template based on Gatsby with oah-ui component package
+Admin dashboard template based on Gatsby with [@paljs/ui](https://github.com/paljs/ui) component package
 
 #### Setup:
 
 ```
-git clone https://github.com/AhmedElywa/oah-admin.git
+git clone https://github.com/paljs/gatsby-admin-template.git
 
-cd oah-admin
+cd gatsby-admin-template
 
 yarn install
 

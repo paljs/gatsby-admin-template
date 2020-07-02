@@ -1,4 +1,4 @@
-import { MessageProps } from '@paljs/ui';
+import { MessageProps } from '@paljs/ui/Chat';
 
 const messages: MessageProps[] = [
   {
