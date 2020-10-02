@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
 import themes from './themes';
 import { Layout, LayoutContent, LayoutFooter, LayoutContainer, LayoutColumns, LayoutColumn } from '@paljs/ui/Layout';
@@ -8,14 +8,31 @@ import Header from './Header';
 import SimpleLayout from './SimpleLayout';
 import SidebarCustom from './Sidebar';
 
+const getDefaultTheme = (): DefaultTheme['name'] => {
+  if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+    return localStorage.getItem('theme') as DefaultTheme['name'];
+  } else {
+    const hours = new Date().getHours();
+    return hours > 6 && hours < 19 ? 'default' : 'dark';
+  }
+};
+
 const LayoutPage: React.FC<{ pageContext: { layout: string } }> = ({ children, pageContext }) => {
-  const [theme, setTheme] = useState<DefaultTheme['name']>('dark');
+  const [theme, setTheme] = useState<DefaultTheme['name']>('default');
   const [dir, setDir] = useState<'ltr' | 'rtl'>('ltr');
   const sidebarRef = useRef<SidebarRefObject>(null);
 
   const changeTheme = (newTheme: DefaultTheme['name']) => {
     setTheme(newTheme);
+    typeof localStorage !== 'undefined' && localStorage.setItem('theme', newTheme);
   };
+
+  useEffect(() => {
+    const localTheme = getDefaultTheme();
+    if (localTheme !== theme && theme === 'default') {
+      setTheme(localTheme);
+    }
+  }, []);
 
   const changeDir = () => {
     const newDir = dir === 'ltr' ? 'rtl' : 'ltr';
@@ -31,7 +48,7 @@ const LayoutPage: React.FC<{ pageContext: { layout: string } }> = ({ children, p
             <Header
               dir={dir}
               changeDir={changeDir}
-              changeTheme={changeTheme}
+              theme={{ set: changeTheme, value: theme }}
               toggleSidebar={() => sidebarRef.current?.toggle()}
             />
           )}
