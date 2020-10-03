@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[20],{lqRj:function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return a}));var c=e("q1tI"),o=e.n(c),u=e("Wbzz");function a(){return Object(c.useEffect)((function(){Object(u.navigate)("/extra-components/accordion")})),o.a.createElement("div",null)}}}]);
+//# sourceMappingURL=component---src-pages-extra-components-index-tsx-d33bf2996736acb147d7.js.map
