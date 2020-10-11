@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'OAH-Admin',
-    description: 'Admin dashboard template based on Gatsby with oah-ui component package.',
-    author: 'OAH Technology',
+    title: 'Free React Admin dashboard template based on Gatsby',
+    description: 'Admin dashboard template based on Gatsby with @paljs/ui component package.',
+    author: 'Ahmed Elywa',
   },
   plugins: [
     'gatsby-plugin-styled-components',

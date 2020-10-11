@@ -19,7 +19,7 @@ export default function Register() {
   };
   return (
     <Auth title="Create new account">
-      <SEO title="Register" keywords={['OAH', 'application', 'react']} />
+      <SEO title="Register" />
       <form>
         <Input fullWidth>
           <input type="text" placeholder="Username" />

@@ -19,7 +19,7 @@ export default function SearchPage() {
   ];
   return (
     <>
-      <SEO title="Animated Searches" keywords={['OAH', 'application', 'react']} />
+      <SEO title="Animated Searches" />
       <Row>
         {type.map((key) => (
           <Col breakPoint={{ xs: 12, md: 6 }} key={key}>

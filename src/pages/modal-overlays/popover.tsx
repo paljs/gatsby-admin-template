@@ -13,7 +13,7 @@ import SEO from '../../components/SEO';
 export default function PopoverPage() {
   return (
     <>
-      <SEO title="Popover" keywords={['OAH', 'application', 'react']} />
+      <SEO title="Popover" />
       <Row>
         <Col breakPoint={{ xs: 12, md: 6 }}>
           <Card size="Tiny">

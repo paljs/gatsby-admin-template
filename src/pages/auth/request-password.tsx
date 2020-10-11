@@ -9,7 +9,7 @@ import Auth, { Group } from '../../components/Auth';
 export default function RequestPassword() {
   return (
     <Auth title="Forgot Password" subTitle="Enter your email address and we’ll send a link to reset your password">
-      <SEO title="Forgot Password" keywords={['OAH', 'application', 'react']} />
+      <SEO title="Forgot Password" />
       <form>
         <InputGroup fullWidth>
           <input type="email" placeholder="Email Address" />

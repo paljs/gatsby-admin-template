@@ -14,7 +14,7 @@ export default function Login() {
   };
   return (
     <Auth title="Login" subTitle="Hello! Login with your email">
-      <SEO title="Login" keywords={['OAH', 'application', 'react']} />
+      <SEO title="Login" />
       <form>
         <InputGroup fullWidth>
           <input type="email" placeholder="Email Address" />

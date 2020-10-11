@@ -13,7 +13,7 @@ export default function ButtonPage() {
   const status: Status[] = ['Info', 'Success', 'Danger', 'Primary', 'Warning', 'Basic', 'Control'];
   return (
     <>
-      <SEO title="Button" keywords={['OAH', 'application', 'react']} />
+      <SEO title="Button" />
       <Row>
         <Col breakPoint={{ xs: 12 }}>
           <Card>

@@ -9,7 +9,7 @@ import Auth, { Group } from '../../components/Auth';
 export default function ResetPassword() {
   return (
     <Auth title="Change Password" subTitle="Please set a new password">
-      <SEO title="Change Password" keywords={['OAH', 'application', 'react']} />
+      <SEO title="Change Password" />
       <form>
         <InputGroup fullWidth>
           <input type="password" placeholder="New Password" />

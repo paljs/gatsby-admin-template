@@ -25,7 +25,7 @@ const ErrorStyle = styled.div`
 export default function Error() {
   return (
     <>
-      <SEO title="404 Page Not Found" keywords={['OAH', 'application', 'react']} />
+      <SEO title="404 Page Not Found" />
       <Card>
         <CardBody>
           <ErrorStyle>

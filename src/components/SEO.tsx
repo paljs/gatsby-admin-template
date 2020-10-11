@@ -50,7 +50,7 @@ const SEO: React.FC<SEOProps> = ({ description, lang, meta, keywords, title }) =
               },
               {
                 name: 'twitter:creator',
-                content: data.site.siteMetadata.author,
+                content: '@AhmedElywh',
               },
               {
                 name: 'twitter:title',
@@ -78,7 +78,28 @@ const SEO: React.FC<SEOProps> = ({ description, lang, meta, keywords, title }) =
 };
 
 SEO.defaultProps = {
-  keywords: ['OAH', 'application', 'react'],
+  keywords: [
+    'admin-dashboard',
+    'admin',
+    'react',
+    'reactjs',
+    'dashboard',
+    'dashboard-templates',
+    'themes',
+    'styled-components',
+    'styledcomponents',
+    'admin-template',
+    'free-admin-template',
+    'react-admin-dashboard',
+    'react-admin-panel',
+    'react-admin-component',
+    'gatsby',
+    'react-forms',
+    'react-select',
+    'react-accordion',
+    'react-chat',
+    'react-admin-template',
+  ],
 };
 
 interface SEOProps {

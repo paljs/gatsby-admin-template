@@ -53,7 +53,7 @@ const ActionsPage = () => {
   ];
   return (
     <>
-      <SEO title="Actions" keywords={['OAH', 'application', 'react']} />
+      <SEO title="Actions" />
       <Row>
         <Col breakPoint={{ xs: 12, md: 6 }}>
           <Card>
