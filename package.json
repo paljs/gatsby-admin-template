@@ -39,7 +39,6 @@
     "dev": "gatsby develop",
     "start": "npm run dev",
     "serve": "gatsby serve",
-    "deploy": "gatsby build && gh-pages -d public",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "repository": {
@@ -62,7 +61,6 @@
     "eslint-config-prettier": "6.12.0",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.21.3",
-    "gh-pages": "3.1.0",
     "husky": "4.3.0",
     "prettier": "2.1.2",
     "pretty-quick": "3.0.2",
