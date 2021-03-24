@@ -40,7 +40,8 @@
     "dev": "gatsby develop",
     "start": "npm run dev",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
