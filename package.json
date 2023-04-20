@@ -17,7 +17,7 @@
     "gatsby-plugin-layout": "2.12.0",
     "gatsby-plugin-manifest": "3.12.0",
     "gatsby-plugin-react-helmet": "4.12.0",
-    "gatsby-plugin-sharp": "3.12.0",
+    "gatsby-plugin-sharp": "4.25.1",
     "gatsby-plugin-styled-components": "4.12.0",
     "gatsby-plugin-typescript": "3.12.0",
     "gatsby-source-filesystem": "3.12.0",
